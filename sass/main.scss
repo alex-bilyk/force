@@ -8,30 +8,51 @@
 
 .header {
 	padding: 25px 0;
-	border-bottom: 1px solid $light-grey;
+	
+	&-top {
+		border-bottom: 1px solid $light-grey;
 
-	&-logo {
-		img {
-			width: 205px;
-			height: 32px;
+		&-logo {
+			img {
+				width: 205px;
+				height: 32px;
+			}
 		}
-	}
 
-	&-menu {
-		nav {
-			ul {
-				display: flex;
-				justify-content: flex-end;
+		&-menu {
+			.nav {
 				li {
 					a {
 						padding-left: 25px;
-						text-decoration: none;
-						font-size: 21px;
 					}
 				}
 			}
 		}
+
 	}
+
+	&-bottom {
+		padding-top: 15px;
+
+		&-text {
+			span {
+				font-size: 14px;
+				color: $orange;
+			}
+		}
+
+		&-submenu {
+			.nav {
+				li {
+					a {
+						padding-left: 25px;
+					}
+				}
+			}
+		}
+
+	}
+
 }
 
 /* Finish section Header */
