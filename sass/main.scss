@@ -8,9 +8,15 @@
 
 .header {
 	padding: 25px 0;
+	background-image: url('../img/main/Force@work_banner.png');
+	background-repeat: no-repeat;
+	background-position: center 0px;
+	background-size: cover;
+
+	/* Start block Header-top and Header-bottom */
 	
 	&-top {
-		border-bottom: 1px solid $light-grey;
+		border-bottom: 1px solid $white-grey;
 
 		&-logo {
 			img {
@@ -52,6 +58,44 @@
 		}
 
 	}
+
+
+	/* Finish block Header-top and Header-bottom */
+
+	/* Start block Main */
+
+	.main {
+
+		&-text {
+			padding-top: 140px;
+			h1 {
+				font-size: 80px;
+				color: $dark-grey;
+				font-weight: 700;
+			}
+			h2 {
+				font-size: 20px;
+				color: $grey;
+				padding: 40px 0;
+			}
+			p {
+				font-size: 14px;
+				color: $light-grey;
+				padding: 25px 0;
+			}
+
+			&-list {
+				ul li {
+					a {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+	}
+
+	/* Finish block Main */
 
 }
 
