@@ -131,3 +131,66 @@ svg {
       text-decoration: none; }
 
 /* Finish section Header */
+/* Start section Why_us */
+.why_us-box {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 10px; }
+  .why_us-box p {
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px; }
+
+.why_us img {
+  margin-bottom: -64px; }
+
+.why_us-text {
+  padding: 10px;
+  padding-top: 64px;
+  -webkit-box-shadow: 0px 0px 27px 0px rgba(20, 20, 21, 0.09);
+          box-shadow: 0px 0px 27px 0px rgba(20, 20, 21, 0.09); }
+
+.why_us-slider-arrows {
+  content: '';
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  z-index: 9;
+  height: 50px;
+  width: 50px;
+  -webkit-transform: translateY(-9px);
+  -ms-transform: translateY(-9px);
+  transform: translateY(-9px);
+  padding: 16px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #FF9300; }
+  .why_us-slider-arrows:hover {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer; }
+
+.slick-active {
+  outline: none; }
+
+.arrow-right {
+  right: 0;
+  padding-left: 20px;
+  content: '';
+  position: absolute;
+  background: url(../img/icons/arrow.svg) center center; }
+
+.cls-1 {
+  fill: currentColor;
+  color: red; }
+
+.arrow-left {
+  left: 0; }
+
+.slick-dots {
+  bottom: -50px; }
+
+/* Finish section Why_us */
