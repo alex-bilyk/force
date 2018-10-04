@@ -71,8 +71,6 @@
 			padding-top: 140px;
 			h1 {
 				font-size: 80px;
-				color: $dark-grey;
-				font-weight: 700;
 			}
 			h2 {
 				font-size: 20px;
@@ -81,7 +79,6 @@
 			}
 			p {
 				font-size: 14px;
-				color: $light-grey;
 				padding: 25px 0;
 			}
 
@@ -148,7 +145,6 @@
 			&-body {
 				padding-top: 10px;
 				p {
-					color: $light-grey;
 					font-size: 14px;
 					font-weight: 500;
 				}
@@ -196,5 +192,92 @@
   padding-right: 20px;
 }
 
-
 /* Finish section Why_us */
+
+
+/* Start section Our_goals */
+
+.our_goals {
+	padding: 0 0 300px 0;
+	background: url(../img/our_goals/bg-our_goals-img.png) no-repeat;
+	background-position: -50px -10px;
+
+	&-img {
+		padding: 100px 0 0 0;
+		text-align: center;
+		background: url(../img/our_goals/bg-our_goals-text.png) no-repeat;
+		background-size: contain;
+		background-position: 50% -60px;
+		img {
+			width: 850px;
+			max-height: 480px;
+		}
+	}
+}
+
+/* Finish section Our_goals */
+
+
+/* Start section Mix_match */
+
+.mix_match {
+	position: relative;
+	padding: 0px 0 100px 0;
+	img {
+		position: absolute;
+		right: 0;
+		top: -50%;
+	}
+	&-desc {
+		position: relative;
+		img {
+			position: absolute;
+			top: -50%;
+		}
+		h3 {
+			font-size: 50px;
+		}
+		p {
+			font-size: 20px;
+		}
+		.btn-mix_match {
+			text-transform: uppercase;
+		}
+	}
+}
+
+/* Finish section Mix_match */
+
+
+/* Start section Multibrand */
+
+.multibrand {
+	position: relative;
+	margin-top: 100px;
+	padding: 50px 0 100px 0;
+	background: url(../img/multibrand/bg-multibrand.png) no-repeat;
+	background-size: cover;
+	img {
+		position: absolute;
+		top: -20%;
+		right: 2%;
+	}
+	&-desc {
+		position: relative;
+		padding-bottom: 100px;
+
+		// img {
+		// 	position: absolute;
+		// 	top: -50%;
+		// 	right: 0%;
+		// }
+		h3 {
+			font-size: 50px;
+		}
+		p {
+			font-size: 20px;
+		}
+	}
+}
+
+/* Finish section Multibrand */
