@@ -132,8 +132,16 @@ svg {
         font-size: 14px;
         color: #969696;
         padding: 25px 0; }
-      .header .main-text-list ul li a {
-        text-decoration: none; }
+      .header .main-text-list {
+        width: 220px; }
+        .header .main-text-list ul li {
+          background: url(../img/icons/arrow.svg) no-repeat;
+          background-position: right center;
+          -webkit-background-size: 6px 10px;
+                  background-size: 6px 10px; }
+          .header .main-text-list ul li a {
+            width: 200px;
+            text-decoration: none; }
 
 /* Finish section Header */
 /* Start section Why_us */
@@ -178,7 +186,8 @@ svg {
     padding-top: 10px; }
     .why_us-box-text-body p {
       color: #969696;
-      font-size: 14px; }
+      font-size: 14px;
+      font-weight: 500; }
 
 .why_us-slider-arrows {
   content: '';

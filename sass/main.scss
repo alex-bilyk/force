@@ -86,8 +86,13 @@
 			}
 
 			&-list {
+				width: 220px;
 				ul li {
+					background: url(../img/icons/arrow.svg) no-repeat;
+					background-position: right center;
+					background-size: 6px 10px;
 					a {
+						width: 200px;
 						text-decoration: none;
 					}
 				}
@@ -145,6 +150,7 @@
 				p {
 					color: $light-grey;
 					font-size: 14px;
+					font-weight: 500;
 				}
 			}
 	   }
