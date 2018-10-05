@@ -328,7 +328,7 @@ img {
 /* Finish section Multibrand */
 /* Start section Footer */
 .footer {
-  padding: 100px 0;
+  padding: 50px 0 25px 0;
   background: #393838; }
   .footer-quick_menu-head {
     border-bottom: 1px solid #ffffff; }
@@ -377,5 +377,47 @@ img {
           height: 21px; }
   .footer-contact-head {
     border-bottom: 1px solid #ffffff; }
+  .footer-contact-form {
+    padding-top: 20px; }
+    .footer-contact-form .contact-item {
+      position: relative;
+      margin-bottom: 10px;
+      font-size: 14px; }
+      .footer-contact-form .contact-item .btn-clear {
+        position: absolute;
+        top: 2.5px;
+        right: 5px;
+        display: none; }
+        .footer-contact-form .contact-item .btn-clear img {
+          width: 35px;
+          height: 35px; }
+      .footer-contact-form .contact-item:focus-within > .btn-clear {
+        display: block; }
+    .footer-contact-form .contact-input, .footer-contact-form .contact-textarea {
+      width: 100%;
+      min-height: 40px;
+      padding: 5px 10px;
+      color: #ffffff;
+      border: none;
+      -webkit-border-radius: 6px;
+              border-radius: 6px;
+      background-color: #646464; }
+      .footer-contact-form .contact-input::-webkit-input-placeholder, .footer-contact-form .contact-textarea::-webkit-input-placeholder {
+        color: #BABABA;
+        background: #646464 url(../img/icons/arrow-normal-grey.svg) no-repeat;
+        -webkit-background-size: 10px 10px;
+                background-size: 10px 10px;
+        background-position: 0px 50%;
+        padding-left: 20px; }
+  .footer-contact-newsletter {
+    padding-top: 10px; }
+    .footer-contact-newsletter .newsletter-form {
+      padding-top: 15px; }
+  .footer-caption {
+    padding: 30px 0;
+    background: #292828; }
+    .footer-caption span {
+      font-size: 14px;
+      color: #BABABA; }
 
 /* Finish section Footer */

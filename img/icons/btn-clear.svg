@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.268 34.268">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e74c3c;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_1206" data-name="Group 1206" transform="translate(-1497.732 -3674.732)">
+    <rect id="Rectangle_241" data-name="Rectangle 241" class="cls-1" width="34.268" height="34.268" rx="5" transform="translate(1497.732 3674.732)"/>
+    <path id="delete_cross" class="cls-2" d="M83.379,73.112l-3.716,3.716-3.716-3.716a2.006,2.006,0,0,0-2.836,2.837l3.716,3.716L73.112,83.38a2.006,2.006,0,0,0,2.836,2.837L79.664,82.5l3.716,3.716A2.006,2.006,0,0,0,86.8,84.8a1.985,1.985,0,0,0-.588-1.416L82.5,79.664l3.716-3.716a2.006,2.006,0,0,0-2.836-2.837Z" transform="translate(1435.488 3612.488)"/>
+  </g>
+</svg>
