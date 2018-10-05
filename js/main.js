@@ -36,3 +36,11 @@ $(document).ready(function(){
 	  	]
 	});
 });
+
+/*select*/
+
+(function() {
+	[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+		new SelectFx(el);
+	} );
+})();
