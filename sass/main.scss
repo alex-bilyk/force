@@ -316,6 +316,77 @@
 .footer {
 	padding: 100px 0;
 	background: $black-grey;
+
+	&-quick_menu {
+		&-head {
+			border-bottom: 1px solid  $white;
+		}
+		&-links {
+			padding-top: 40px;
+			display: flex;
+			
+			nav {
+				ul {
+					li {
+						position: relative;
+						margin-bottom: 20px;
+						color: $normal-grey;
+						&:hover {
+							color: $white;
+							font-weight: 700;
+						}
+						img {
+							display: none;	
+						}
+						&:hover {
+							color: $white;
+							font-weight: 700;
+							 > img {
+							 	position: absolute;
+							 	display: inline-block;
+							 	height: 10px;
+							 	width: 6px;
+							 	top: calc(50% - 6px);
+							 	left: -15px;
+						    }
+						}
+					}
+				}
+			}
+			&-block_1 {
+				margin-right: 25px;
+			}
+			&-block_2 {
+				margin-right: 25px;
+			}
+			&-block_3 {
+				nav {
+					ul li:last-of-type {
+						color: $yellow;
+					}
+				}
+				nav.social {
+					ul {
+						display: flex;
+						li a {
+							margin-right: 10px;
+							img {
+								display: inline-block;
+								width: 21px;
+								height: 21px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&-contact {
+		&-head {
+			border-bottom: 1px solid  $white;			
+		}
+	}
 }
 
 /* Finish section Footer */

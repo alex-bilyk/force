@@ -47,6 +47,10 @@ h2 {
 h3 {
   font-size: 50px; }
 
+h4 {
+  font-size: 20px;
+  color: #ffffff; }
+
 p {
   color: #969696; }
 
@@ -98,6 +102,15 @@ img {
       -o-transition: .4s;
       transition: .4s;
       color: #FF9300; }
+  .btn-download {
+    background-color: transparent;
+    font-weight: 300;
+    color: #FF9300; }
+    .btn-download > .icon {
+      color: #FF9300;
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
 
 .icon {
   position: absolute;

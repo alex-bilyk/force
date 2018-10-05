@@ -6,7 +6,9 @@ $black-grey: #393838;
 $dark-grey: #646464;
 $light-grey: #969696;
 $white-grey: #D9D9D9;
+$normal-grey: #BABABA;
 $orange: #FF9300;
+$yellow: #FFFF00;
 
 /* Settings for site */
 * {
@@ -65,6 +67,11 @@ h3 {
   font-size: 50px;
 }
 
+h4 {
+  font-size: 20px;
+  color: $white;
+}
+
 p {
   color: $light-grey;
 }
@@ -113,6 +120,16 @@ img {
       color: $orange;      
     }
   }
+
+  &-download {
+    background-color: transparent;
+    font-weight: 300;
+    color: $orange;
+    > .icon {
+      color: $orange;
+      transform: rotate(90deg);      
+    }
+  }
 }
 
 .icon {
@@ -129,6 +146,7 @@ img {
 .orange {
   color: $orange;
 }
+
 
 .bold-dark {
   color: $dark-grey;

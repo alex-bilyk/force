@@ -48,6 +48,10 @@ h2 {
 h3 {
   font-size: 50px; }
 
+h4 {
+  font-size: 20px;
+  color: #ffffff; }
+
 p {
   color: #969696; }
 
@@ -99,6 +103,15 @@ img {
       -o-transition: .4s;
       transition: .4s;
       color: #FF9300; }
+  .btn-download {
+    background-color: transparent;
+    font-weight: 300;
+    color: #FF9300; }
+    .btn-download > .icon {
+      color: #FF9300;
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
 
 .icon {
   position: absolute;
@@ -317,5 +330,52 @@ img {
 .footer {
   padding: 100px 0;
   background: #393838; }
+  .footer-quick_menu-head {
+    border-bottom: 1px solid #ffffff; }
+  .footer-quick_menu-links {
+    padding-top: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .footer-quick_menu-links nav ul li {
+      position: relative;
+      margin-bottom: 20px;
+      color: #BABABA; }
+      .footer-quick_menu-links nav ul li:hover {
+        color: #ffffff;
+        font-weight: 700; }
+      .footer-quick_menu-links nav ul li img {
+        display: none; }
+      .footer-quick_menu-links nav ul li:hover {
+        color: #ffffff;
+        font-weight: 700; }
+        .footer-quick_menu-links nav ul li:hover > img {
+          position: absolute;
+          display: inline-block;
+          height: 10px;
+          width: 6px;
+          top: -webkit-calc(50% - 6px);
+          top: calc(50% - 6px);
+          left: -15px; }
+    .footer-quick_menu-links-block_1 {
+      margin-right: 25px; }
+    .footer-quick_menu-links-block_2 {
+      margin-right: 25px; }
+    .footer-quick_menu-links-block_3 nav ul li:last-of-type {
+      color: #FFFF00; }
+    .footer-quick_menu-links-block_3 nav.social ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .footer-quick_menu-links-block_3 nav.social ul li a {
+        margin-right: 10px; }
+        .footer-quick_menu-links-block_3 nav.social ul li a img {
+          display: inline-block;
+          width: 21px;
+          height: 21px; }
+  .footer-contact-head {
+    border-bottom: 1px solid #ffffff; }
 
 /* Finish section Footer */
