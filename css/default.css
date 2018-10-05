@@ -18,7 +18,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.01em;
   font-size: 16px;
-  min-width: 320px; }
+  min-width: 320px;
+  overflow-x: hidden; }
 
 ul {
   list-style: none;
@@ -36,6 +37,15 @@ svg {
 h1, h2, h3, h4, h5, h6 {
   color: #646464;
   font-weight: 700; }
+
+h1 {
+  font-size: 80px; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 50px; }
 
 p {
   color: #969696; }
@@ -68,6 +78,7 @@ img {
   position: relative;
   color: #ffffff;
   background-color: #FF9300;
+  border: 1px solid #FF9300;
   font-size: 14px;
   font-weight: 500;
   -webkit-border-radius: 50px;
@@ -77,11 +88,16 @@ img {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
   .btn:hover {
-    background-color: #8B8B9C;
-    color: #ffffff;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
+    background-color: #ffffff;
+    color: #FF9300;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
+    .btn:hover > .icon {
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      color: #FF9300; }
 
 .icon {
   position: absolute;

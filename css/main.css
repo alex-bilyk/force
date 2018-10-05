@@ -19,7 +19,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.01em;
   font-size: 16px;
-  min-width: 320px; }
+  min-width: 320px;
+  overflow-x: hidden; }
 
 ul {
   list-style: none;
@@ -37,6 +38,15 @@ svg {
 h1, h2, h3, h4, h5, h6 {
   color: #646464;
   font-weight: 700; }
+
+h1 {
+  font-size: 80px; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 50px; }
 
 p {
   color: #969696; }
@@ -69,6 +79,7 @@ img {
   position: relative;
   color: #ffffff;
   background-color: #FF9300;
+  border: 1px solid #FF9300;
   font-size: 14px;
   font-weight: 500;
   -webkit-border-radius: 50px;
@@ -78,11 +89,16 @@ img {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
   .btn:hover {
-    background-color: #8B8B9C;
-    color: #ffffff;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s; }
+    background-color: #ffffff;
+    color: #FF9300;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
+    .btn:hover > .icon {
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      color: #FF9300; }
 
 .icon {
   position: absolute;
@@ -132,10 +148,7 @@ img {
     padding: 0 0 80px 0; }
     .header .main-text {
       padding-top: 140px; }
-      .header .main-text h1 {
-        font-size: 80px; }
       .header .main-text h2 {
-        font-size: 20px;
         color: #8B8B9C;
         padding: 40px 0; }
       .header .main-text p {
@@ -152,6 +165,12 @@ img {
             width: 200px;
             text-decoration: none; }
 
+/* Start Adaptive block for section Header */
+@media only screen and (max-width: 575px) {
+  .header .main-text h1 {
+    font-size: 32px; } }
+
+/* Finish Adaptive block for section Header */
 /* Finish section Header */
 /* Start section Why_us */
 .why_us-slider {
@@ -262,8 +281,6 @@ img {
     .mix_match-desc img {
       position: absolute;
       top: -50%; }
-    .mix_match-desc h3 {
-      font-size: 50px; }
     .mix_match-desc p {
       font-size: 20px; }
     .mix_match-desc .btn-mix_match {
@@ -281,13 +298,24 @@ img {
   .multibrand img {
     position: absolute;
     top: -20%;
-    right: 2%; }
+    right: 3%; }
   .multibrand-desc {
-    position: relative;
     padding-bottom: 100px; }
-    .multibrand-desc h3 {
-      font-size: 50px; }
-    .multibrand-desc p {
-      font-size: 20px; }
+    .multibrand-desc img {
+      position: absolute;
+      top: -30%;
+      right: -20%; }
+    .multibrand-desc-text {
+      position: relative; }
+      .multibrand-desc-text h3 {
+        font-size: 50px; }
+      .multibrand-desc-text p {
+        font-size: 20px; }
 
 /* Finish section Multibrand */
+/* Start section Footer */
+.footer {
+  padding: 100px 0;
+  background: #393838; }
+
+/* Finish section Footer */

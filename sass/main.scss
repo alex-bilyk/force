@@ -69,11 +69,7 @@
 
 		&-text {
 			padding-top: 140px;
-			h1 {
-				font-size: 80px;
-			}
 			h2 {
-				font-size: 20px;
 				color: $grey;
 				padding: 40px 0;
 			}
@@ -100,7 +96,39 @@
 
 	/* Finish block Main */
 
+
 }
+/* Start Adaptive block for section Header */
+
+@include lg-down {
+
+}
+
+@include md-down {
+
+}
+
+@include sm-down {
+}
+
+@include xs-down {
+
+	.header {
+
+		.main {
+			&-text {
+				h1 {
+					font-size: 32px;
+				}
+			}
+		}
+
+
+	}
+
+}
+
+/* Finish Adaptive block for section Header */
 
 /* Finish section Header */
 
@@ -234,9 +262,6 @@
 			position: absolute;
 			top: -50%;
 		}
-		h3 {
-			font-size: 50px;
-		}
 		p {
 			font-size: 20px;
 		}
@@ -260,24 +285,37 @@
 	img {
 		position: absolute;
 		top: -20%;
-		right: 2%;
+		right: 3%;
 	}
-	&-desc {
-		position: relative;
-		padding-bottom: 100px;
 
-		// img {
-		// 	position: absolute;
-		// 	top: -50%;
-		// 	right: 0%;
-		// }
-		h3 {
-			font-size: 50px;
+	&-desc {
+		padding-bottom: 100px;
+		img {
+			position: absolute;
+			top: -30%;
+			right: -20%;
 		}
-		p {
-			font-size: 20px;
+		&-text {
+			position: relative;
+			h3 {
+				font-size: 50px;
+			}
+			p {
+				font-size: 20px;
+			}
 		}
 	}
+
 }
 
 /* Finish section Multibrand */
+
+
+/* Start section Footer */
+
+.footer {
+	padding: 100px 0;
+	background: $black-grey;
+}
+
+/* Finish section Footer */
