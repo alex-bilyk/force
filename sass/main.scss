@@ -73,6 +73,7 @@
 				color: $grey;
 				padding: 40px 0;
 				font-family: 'Maven Pro', sans-serif;
+				font-weight: 400;
 			}
 			p {
 				font-size: 14px;
@@ -117,10 +118,57 @@
 
 	.header {
 
-		.main {
+		&-top {
+			&-menu, &-lang {
+				display: none;
+			}
+		}
+
+		&-bottom {
 			&-text {
+				span {
+					font-size: 9px;
+				}
+			}
+			&-submenu {
+				display: none;
+			}
+		}
+
+		.main {
+			padding: 0 0 25px 0;
+
+			&-text {
+				padding-top: 30px;
+				text-align: center;
 				h1 {
 					font-size: 32px;
+				}
+				h2 {
+					font-size: 12px;
+					padding: 25px 0;
+				}
+				.btn-main {
+					width: 246px;
+				}
+				p {
+					display: none;
+				}
+
+				&-list {
+					width: 246px;
+					margin: 0 auto;
+					ul li {
+						background: none;
+						border: 1px solid  $orange;
+						border-radius: 50px;
+						width: 246px;
+						padding: 12px 0;					
+						margin-top: 10px;
+						&:first-of-type {
+							margin-top: 15px;
+						}
+					}
 				}
 			}
 		}
@@ -306,20 +354,21 @@ sub menu
 /* Start section Why_us */
 
 .why_us {
+	position: relative;
+	padding: 75px 0 20px 0;
+	background: url(../img/why_us/bg-why_us.png) no-repeat;
+	background-size: contain;
+	background-position: 50% -135px;
+	// top: -35%;
 
 	&-slider {
-		padding: 75px 0 20px 0;
-		background: url(../img/why_us/bg-why_us.png) no-repeat;
-		background-size: contain;
-		background-position: 50% -75px;
-		top: -20%;
 		&-item {
 			margin: 10px;
 	    	min-height: 320px;
-	    	box-shadow: 0px 0 15px 2px rgba(20, 20, 21, 0.4);
 		}
 	}
 	&-box {
+    	box-shadow: 0px 0 50px 1px rgba(20, 20, 21, 0.4);
 		img {
 			width: 100%;
 			height: 100%;
@@ -356,11 +405,12 @@ sub menu
     z-index: 9;
     height: 39px;
     width: 39px;
+    font-size: 10px;
     -webkit-transform: translateY(-9px);
     -ms-transform: translateY(-9px);
     -o-transform: translateY(-9px);
     transform: translateY(-9px);
-    padding: 12px;
+    padding: 14px;
     text-align: center;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -371,7 +421,7 @@ sub menu
     border: 1px solid  $orange;
     color: $white;
     &:hover {
-      background-color: $white;
+      background-color: transparent;
       color: $orange;
 	  border: 1px solid  $orange;
       cursor: pointer;
@@ -383,12 +433,83 @@ sub menu
 }
 .arrow-right {
   right: -40px;
-  padding-left: 15px;
+  padding-left: 16px;
 }
 .arrow-left {
   left: -40px;
-  padding-right: 15px;
+  padding-right: 16px;
 }
+
+/* Start Adaptive block */
+@include lg-down {
+
+}
+
+@include md-down {
+
+}
+
+@include sm-down {
+}
+
+@include xs-down {
+
+	.why_us {
+		    padding: 25px 0 0px 0;
+		    background-position: 50% -20px;
+
+		&-slider {
+			&-item {
+
+				padding: 0 25px;
+			}
+		}
+
+		&-box {
+
+			&-text {
+				padding: 0 22px;
+				&-head {
+					padding-top: 20px;
+					span {
+						font-size: 12px;
+					}
+				}
+				&-body {
+					p {
+						font-size: 9px;
+					}
+				}
+			}
+		}
+
+		&-slider-arrows {
+		    height: 35px;
+		    width: 35px;
+		    font-size: 9px;
+		    padding: 12px;
+	        background-color: transparent;
+	        color: $orange;
+		    &:hover {
+		      background-color: $orange;
+		      color: $white;
+		    }
+		  }
+
+		.arrow-right {
+		 	right: -10px;
+		 	padding-left: 15px;
+		}
+		.arrow-left {
+		 	padding-left: 12px;
+			left: -10px;
+		}
+
+
+	}
+
+}
+/* Start Adaptive block */
 
 /* Finish section Why_us */
 
@@ -412,6 +533,30 @@ sub menu
 		}
 	}
 }
+
+/* Start Adaptive block */
+@include lg-down {
+
+}
+
+@include md-down {
+
+}
+
+@include sm-down {
+}
+
+@include xs-down {
+
+	.our_goals {
+		background: none;
+
+		&-img {
+		}
+	}
+
+}
+/* Start Adaptive block */
 
 /* Finish section Our_goals */
 
@@ -441,6 +586,40 @@ sub menu
 	}
 }
 
+/* Start Adaptive block */
+@include lg-down {
+
+}
+
+@include md-down {
+
+}
+
+@include sm-down {
+}
+
+@include xs-down {
+	
+	.mix_match {
+
+		&-desc {
+			text-align: center;
+
+			h3 {
+				font-size: 35px;
+			}
+			p {
+				font-size: 12px;
+			}
+			.btn-mix_match {
+				text-transform: none;
+			}
+		}
+	}
+
+}
+/* Start Adaptive block */
+
 /* Finish section Mix_match */
 
 
@@ -458,13 +637,16 @@ sub menu
 		right: 3%;
 	}
 
-	&-desc {
-		padding-bottom: 100px;
+	&-book {
 		img {
 			position: absolute;
-			top: -30%;
-			right: -20%;
+			top: -10%;
+			right: 0;
 		}
+	}
+
+	&-desc {
+		padding-bottom: 100px;
 		&-text {
 			position: relative;
 			h3 {
@@ -477,6 +659,44 @@ sub menu
 	}
 
 }
+
+/* Start Adaptive block */
+
+@include lg-down {
+
+}
+
+@include md-down {
+
+}
+
+@include sm-down {
+}
+
+@include xs-down {
+
+	.multibrand {
+
+		&-desc {
+			text-align: center;
+
+			&-text {
+				h3 {
+					font-size: 30px;
+				}
+				p {
+					font-size: 12px;
+				}
+
+				a {
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+
+}
+/* Finish Adaptive block */
 
 /* Finish section Multibrand */
 
@@ -623,6 +843,41 @@ sub menu
 		}
 	}
 }
+
+/* Start Adaptive block */
+
+@include lg-down {
+
+}
+
+@include md-down {
+
+}
+
+@include sm-down {
+}
+
+@include xs-down {
+
+	.footer {
+
+		&-caption {
+
+			&-block {
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+				span {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+
+}
+
+/* Finish Adaptive block */
 
 /* Finish section Footer */
 
