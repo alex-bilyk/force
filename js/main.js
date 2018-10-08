@@ -9,11 +9,10 @@ $(document).ready(function(){
 	    dots: false,
 	    responsive: [
 	    {
-	      breakpoint: 992,
+	      breakpoint: 1020,
 	      settings: {
 	        slidesToShow: 3,
-	        slidesToScroll: 1,
-	        infinite: true,
+	        slidesToScroll: 1
 	      }
 	    },
 	    {

@@ -1,3 +1,8 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
 /* Base colors */
 $white: #ffffff;
 $black: #000000;
@@ -27,6 +32,7 @@ html {
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   background: #fff;
   line-height: 1.5;
   letter-spacing: 0.01em;
@@ -53,8 +59,8 @@ svg {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $dark-grey;
   font-weight: 700;
+  color: $dark-grey;
 }
 
 h1 {
@@ -105,6 +111,7 @@ img {
 .btn {
   position: relative;
   color: $white;
+  font-family: 'Maven Pro', sans-serif;
   background-color: $orange;
   border: 1px solid  $orange;
   font-size: 14px;
@@ -114,7 +121,7 @@ img {
   width: 220px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   &:hover {
-    background-color: $white;
+    background-color: transparent;
     color: $orange;
     transition: .4s;
     > .icon {

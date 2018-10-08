@@ -1,4 +1,8 @@
 /* Additional files */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 /* Base colors */
 /* Settings for site */
 * {
@@ -15,6 +19,7 @@ html {
   height: 100%; }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   background: #fff;
   line-height: 1.5;
   letter-spacing: 0.01em;
@@ -36,8 +41,8 @@ svg {
   vertical-align: baseline; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #646464;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #646464; }
 
 h1 {
   font-size: 80px; }
@@ -82,6 +87,7 @@ img {
 .btn {
   position: relative;
   color: #ffffff;
+  font-family: 'Maven Pro', sans-serif;
   background-color: #FF9300;
   border: 1px solid #FF9300;
   font-size: 14px;
@@ -93,7 +99,7 @@ img {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
   .btn:hover {
-    background-color: #ffffff;
+    background-color: transparent;
     color: #FF9300;
     -webkit-transition: .4s;
     -o-transition: .4s;
@@ -133,10 +139,9 @@ img {
 /* List section for site*/
 /* Start section Header */
 .header {
-  padding: 25px 0;
   background-image: url("../img/main/Force@work_banner.png");
   background-repeat: no-repeat;
-  background-position: left 0px;
+  background-position: center 0px;
   -webkit-background-size: cover;
           background-size: cover;
   /* Start block Header-top and Header-bottom */
@@ -144,7 +149,8 @@ img {
   /* Start block Main */
   /* Finish block Main */ }
   .header-top {
-    border-bottom: 1px solid #D9D9D9; }
+    border-bottom: 1px solid #D9D9D9;
+    padding: 25px 0; }
     .header-top-logo img {
       width: 205px;
       height: 32px; }
@@ -163,12 +169,14 @@ img {
       padding-top: 140px; }
       .header .main-text h2 {
         color: #8B8B9C;
-        padding: 40px 0; }
+        padding: 40px 0;
+        font-family: 'Maven Pro', sans-serif; }
       .header .main-text p {
         font-size: 14px;
         padding: 25px 0; }
       .header .main-text-list {
-        width: 220px; }
+        width: 220px;
+        font-family: 'Maven Pro', sans-serif; }
         .header .main-text-list ul li {
           background: url(../img/icons/arrow.svg) no-repeat;
           background-position: right center;
@@ -184,6 +192,174 @@ img {
     font-size: 32px; } }
 
 /* Finish Adaptive block for section Header */
+/* 
+// Mobile menu
+
+.dws-menu *{
+ margin: 0;
+ padding: 0;
+}
+.dws-menu ul,
+.dws-menu ol{
+ list-style: none;
+}
+.dws-menu > ul{
+ display: flex;
+ justify-content: center;
+}
+.dws-menu > ul li{
+ position: relative;
+ border-right: 1px solid #c7c8ca;
+}
+.dws-menu > ul li:first-child{
+ border-left: 1px solid #b2b3b5;
+}
+.dws-menu > ul li:last-child{
+ border-right: 1px solid #babbbd;
+}
+.dws-menu > ul li > a i.fa{
+ position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 18px;
+}
+.dws-menu > ul li a{
+ display: block;
+ Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3
+ background: rgb(201,201,201); Old browsers
+ background: -moz-linear-gradient(top,  rgba(201,201,201,1) 0%, rgba(246,246,246,1) 2%, rgba(196,197,199,1) 98%, rgba(117,117,119,1) 100%); FF3.6-15
+ background: -webkit-linear-gradient(top,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); Chrome10-25,Safari5.1-6
+ background: linear-gradient(to bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 ); IE6-9
+
+ padding: 15px 30px 15px 40px;
+ font-size: 14px;
+ color: #454547;
+ text-decoration: none;
+ text-transform:uppercase;
+ transition: all 0.3s ease;
+}
+.dws-menu li a:hover{
+ Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0e1e5+0,454547+2,454547+98,e0e1e5+100
+ background: rgb(224,225,229); Old browsers
+ background: -moz-linear-gradient(top,  rgba(224,225,229,1) 0%, rgba(69,69,71,1) 2%, rgba(69,69,71,1) 98%, rgba(224,225,229,1) 100%); FF3.6-15
+ background: -webkit-linear-gradient(top,  rgba(224,225,229,1) 0%,rgba(69,69,71,1) 2%,rgba(69,69,71,1) 98%,rgba(224,225,229,1) 100%); Chrome10-25,Safari5.1-6
+ background: linear-gradient(to bottom,  rgba(224,225,229,1) 0%,rgba(69,69,71,1) 2%,rgba(69,69,71,1) 98%,rgba(224,225,229,1) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e1e5', endColorstr='#e0e1e5',GradientType=0 ); IE6-9
+
+ color: #ffffff;
+ box-shadow: 1px 5px 10px -5px black;
+ transition: all 0.3s ease;
+}
+
+sub menu
+.dws-menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+}
+.dws-menu li > ul li{
+ border: 1px solid #c7c8ca;
+}
+.dws-menu li > ul li a{
+ padding: 10px;
+ text-transform: none;
+ background: #e4e4e5;
+}
+.dws-menu li > ul li ul{
+ position: absolute;
+ right: -150px;
+ top: 0;
+}
+.dws-menu li:hover > ul{
+ display: block;
+}
+
+// Adaptive mobile menu
+
+.dws-menu [type="checkbox"],
+.dws-menu label.toggleSubmenu{
+ display: none;
+}
+.dws-menu label.toggleMenu{
+ Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3
+ background: rgb(201,201,201); Old browsers
+ background: -moz-linear-gradient(top,  rgba(201,201,201,1) 0%, rgba(246,246,246,1) 2%, rgba(196,197,199,1) 98%, rgba(117,117,119,1) 100%); FF3.6-15
+ background: -webkit-linear-gradient(top,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); Chrome10-25,Safari5.1-6
+ background: linear-gradient(to bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 ); IE6-9
+
+ display: none;
+ padding: 15px 40px;
+ text-transform: uppercase;
+ font-size: 14px;
+ cursor: pointer;
+ position: relative;
+}
+
+.dws-menu label.toggleMenu .fa{
+ position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 18px;
+}
+@media all and (max-width: 992px){
+ .dws-menu{
+  overflow: hidden;
+ }
+ .dws-menu ul{
+  display: block;
+  max-height: 0;
+  transition: max-height 0.3s;
+ }
+ .dws-menu li>ul li ul{
+  position: absolute;
+  right: auto;
+  top: auto;
+ }
+ .dws-menu label.toggleMenu{
+  display: block;
+ }
+ input.toggleMenu:checked + label.toggleMenu{
+  background: #000;
+  color: #fff;
+ }
+ input.toggleMenu:checked ~ ul,
+ input.toggleSubmenu:checked ~ ul{
+  display: block;
+  position: relative;
+  max-height: 5000px;
+  transition: max-height 2s ease-in;
+ }
+ .dws-menu label.toggleSubmenu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: block;
+ }
+ input.toggleSubmenu:checked ~ a{
+  background: #454547;
+  color: #fff;
+ }
+ .dws-menu label.toggleSubmenu .fa:before{
+  content: "\f0d7";
+  color: #454547;
+ }
+ .dws-menu label.toggleSubmenu .fa{
+  position: absolute;
+  top: 15px;
+  right: 30px;
+ }
+ .dws-menu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before{
+  content: "\f0d8";
+  color: #ffffff;
+ }
+}
+
+// Mobile menu */
 /* Finish section Header */
 /* Start section Why_us */
 .why_us-slider {
@@ -234,12 +410,12 @@ img {
   position: absolute;
   top: 50%;
   z-index: 9;
-  height: 50px;
-  width: 50px;
+  height: 39px;
+  width: 39px;
   -webkit-transform: translateY(-9px);
   -ms-transform: translateY(-9px);
   transform: translateY(-9px);
-  padding: 16px;
+  padding: 12px;
   text-align: center;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -256,12 +432,12 @@ img {
   outline: none; }
 
 .arrow-right {
-  right: -55px;
-  padding-left: 20px; }
+  right: -40px;
+  padding-left: 15px; }
 
 .arrow-left {
-  left: -55px;
-  padding-right: 20px; }
+  left: -40px;
+  padding-right: 15px; }
 
 /* Finish section Why_us */
 /* Start section Our_goals */
@@ -337,7 +513,8 @@ img {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    font-family: 'Lato', sans-serif; }
     .footer-quick_menu-links nav ul li {
       position: relative;
       margin-bottom: 20px;
@@ -416,12 +593,35 @@ img {
   .footer-caption {
     padding: 30px 0;
     background: #292828; }
-    .footer-caption span {
-      font-size: 14px;
-      color: #BABABA; }
+    .footer-caption-block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .footer-caption-block span {
+        font-size: 14px;
+        color: #BABABA; }
+      .footer-caption-block img {
+        width: 51px;
+        height: 18px; }
 
 /* Finish section Footer */
 /* Start styles from the file cs-skin-border */
+.cs-select > span::after, .cs-select .cs-selected span::after {
+  content: '';
+  padding: 10px;
+  background: url(../img/icons/arrow-black.svg) no-repeat;
+  -webkit-background-size: 6px 10px;
+  background-size: 6px 10px;
+  background-position: 0px -6px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
 div.cs-skin-border {
   background: transparent; }
 
@@ -438,7 +638,7 @@ div.cs-skin-border {
   font-size: 14px;
   opacity: 0; }
 
-.cs-skin-border .cs-options ul li:hover {
+.cs-skin-border .cs-options span:hover {
   color: #FF9300; }
 
 .cs-skin-border.cs-active .cs-options {
@@ -486,12 +686,6 @@ div.cs-select:focus {
   left: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-.cs-select > span::after {
-  content: '';
-  background: url(../../img/icons/arrow-black.svg) no-repeat;
-  -webkit-background-size: 10px 10px;
-  background-size: 10px 10px; }
 
 /* Options */
 .cs-select .cs-options {
