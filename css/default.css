@@ -41,7 +41,8 @@ svg {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  color: #646464; }
+  color: #646464;
+  text-transform: uppercase; }
 
 h1 {
   font-size: 80px; }
@@ -61,6 +62,16 @@ p {
 
 img {
   max-width: 100%; }
+
+hr {
+  text-align: left;
+  width: 100%;
+  border-top: 1px solid #ffffff;
+  margin: 0px; }
+
+@media only screen and (max-width: 575px) {
+  hr {
+    width: 165px; } }
 
 .svg-sprite {
   display: none; }
@@ -123,6 +134,15 @@ img {
   .btn {
     width: 246px; } }
 
+.btn-clear {
+  position: absolute;
+  top: 2.5px;
+  right: 5px;
+  display: none; }
+  .btn-clear img {
+    width: 35px;
+    height: 35px; }
+
 .icon {
   position: absolute;
   top: 42%;
@@ -132,6 +152,53 @@ img {
   fill: currentColor;
   color: #ffffff;
   margin-left: 10px; }
+
+.input, .textarea {
+  width: 100%;
+  padding: 5px 10px;
+  color: #ffffff;
+  border: none;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #646464; }
+  .input::-webkit-input-placeholder, .textarea::-webkit-input-placeholder {
+    color: #BABABA;
+    background: #646464 url(../img/icons/arrow-normal-grey.svg) no-repeat;
+    -webkit-background-size: 10px 10px;
+            background-size: 10px 10px;
+    background-position: 5px 50%;
+    padding-left: 20px; }
+  .input:-ms-input-placeholder, .textarea:-ms-input-placeholder {
+    color: #BABABA;
+    background: #646464 url(../img/icons/arrow-normal-grey.svg) no-repeat;
+    background-size: 10px 10px;
+    background-position: 5px 50%;
+    padding-left: 20px; }
+
+@media only screen and (max-width: 575px) {
+  .input, .textarea {
+    min-height: 30px;
+    font-size: 9px; }
+    .input::-webkit-input-placeholder, .textarea::-webkit-input-placeholder {
+      color: #BABABA;
+      background: #646464 url(../img/icons/arrow-normal-grey.svg) no-repeat;
+      -webkit-background-size: 7px 4px;
+              background-size: 7px 4px;
+      background-position: 5px 50%;
+      padding-left: 20px; }
+    .input:-ms-input-placeholder, .textarea:-ms-input-placeholder {
+      color: #BABABA;
+      background: #646464 url(../img/icons/arrow-normal-grey.svg) no-repeat;
+      background-size: 7px 4px;
+      background-position: 5px 50%;
+      padding-left: 20px; } }
+
+@media only screen and (min-width: 576px) {
+  .input, .textarea {
+    min-height: 40px; } }
+
+.yellow {
+  color: #FFFF00; }
 
 .orange {
   color: #FF9300; }

@@ -74,6 +74,7 @@
 				padding: 40px 0;
 				font-family: 'Maven Pro', sans-serif;
 				font-weight: 400;
+				text-transform: none;
 			}
 			p {
 				font-size: 14px;
@@ -714,7 +715,7 @@ sub menu
 
 	&-quick_menu {
 		&-head {
-			border-bottom: 1px solid  $white;
+			// border-bottom: 1px solid  $white;
 		}
 		&-links {
 			padding-top: 40px;
@@ -790,16 +791,6 @@ sub menu
 				margin-bottom: 10px;
 				font-size: 14px;
 
-				.btn-clear {
-					position: absolute;
-					top: 2.5px;
-					right: 5px;
-					display: none;
-					img {
-						width: 35px;
-						height: 35px;
-					}
-				}
 				&:focus-within > .btn-clear {
 					-webkit-display: block;
 					-moz-display: block;
@@ -815,38 +806,26 @@ sub menu
 					display: block;
 				}
 			}
-			.contact-input,	.contact-textarea {
-				width: 100%;
-				min-height: 40px;
-				padding: 5px 10px;
-				color: $white;
-				border: none;
-				border-radius: 6px;
-				background-color: $dark-grey;
-				&::-webkit-input-placeholder {
-					color: $normal-grey;
-					background: $dark-grey url(../img/icons/arrow-normal-grey.svg) no-repeat;
-					background-size: 10px 10px;
-					background-position: 5px 50%;
-					padding-left: 20px;
-				}
-				&:-ms-input-placeholder {
-					color: $normal-grey;
-					background: $dark-grey url(../img/icons/arrow-normal-grey.svg) no-repeat;
-					background-size: 10px 10px;
-					background-position: 5px 50%;
-					padding-left: 20px;
-
-				}
-			}
-		}
-		&-newsletter {
-			padding-top: 10px;
-			.newsletter-form {
-				padding-top: 15px;
-			}
 		}
 
+
+	}
+
+	&-newsletter {
+		padding-top: 10px;
+
+		&-head {
+			border-bottom: 1px solid  $white;
+		}
+		.newsletter-form {
+			padding-top: 15px;
+		}
+	}
+
+	&-mob_contact {
+		&-head {
+
+		}
 	}
 
 	&-caption {
@@ -884,6 +863,113 @@ sub menu
 @include xs-down {
 
 	.footer {
+		font-size: 13px;
+
+		&-quick_menu {
+			margin-left: 17px;
+
+			&-head {
+				h4 {
+					font-size: 16px;
+				}
+			}
+			.social {
+				display: none;
+			}
+
+			&-links {
+				nav ul li {
+					margin-bottom: 15px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+				&-block_2 {
+					nav ul {
+						li {
+							margin-bottom: 23.5px;
+							&:last-child {
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+
+				ul.footer-quick_menu-links-dop {
+					margin-top: 25px;
+					li {
+						margin-bottom: 25px;
+					}
+				}
+
+				&-block_3 {
+					display: none;
+				}
+			}
+
+		}
+
+		&-contact {
+			display: none;
+		}
+
+		&-newsletter {
+			text-align: center;
+
+			&-head {
+				h4 {
+					font-size: 13px;
+				}
+			}
+		}
+
+		&-mob_contact {
+
+			&-head {
+				padding-top: 12px;
+				padding-bottom: 30px;
+				h4 {
+					font-size: 13px;
+					text-align: center;
+				}
+			}
+			&-body {
+				text-align: center;
+				font-size: 14px;
+				img {
+					width: 24px;
+					height: 20px;
+				}
+				p {
+					padding-top: 20px;
+					color: $white;
+				}
+				nav.social {
+					ul {
+						display: flex;
+						justify-content: center;
+						li a {
+							margin-right: 10px;
+							img {
+								display: inline-block;
+								width: 21px;
+								height: 21px;
+							}
+						}
+					}
+				}
+			}
+			
+		}
+			
+		.btn-clear {
+			top: 2.5px;
+			right: 5px;
+			img {
+				width: 25px;
+				height: 25px;
+			}
+		}
 
 		&-caption {
 
@@ -896,6 +982,22 @@ sub menu
 					margin-bottom: 20px;
 				}
 			}
+		}
+
+	}
+
+}
+
+@include xs-up {
+
+	.footer {
+
+		&-mob_contact {
+			display: none;
+		}
+
+		.footer-quick_menu-links-dop {
+			display: none;
 		}
 	}
 
