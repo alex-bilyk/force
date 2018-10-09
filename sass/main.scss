@@ -13,9 +13,8 @@
 	background-size: cover;
 
 	/* Start block Header-top and Header-bottom */
-	
+
 	&-top {
-		border-bottom: 1px solid $white-grey;
 		padding: 25px 0;
 
 		&-logo {
@@ -120,6 +119,13 @@
 	.header {
 
 		&-top {
+
+			&-logo {
+				img {
+					width: 112px;
+					height: 18px;
+				}
+			}
 			&-menu, &-lang {
 				display: none;
 			}
@@ -151,6 +157,7 @@
 				}
 				.btn-main {
 					width: 246px;
+					padding: 12px 0;
 				}
 				p {
 					display: none;
@@ -164,8 +171,9 @@
 						border: 1px solid  $orange;
 						border-radius: 50px;
 						width: 246px;
-						padding: 12px 0;					
+						padding: 7px 0;					
 						margin-top: 10px;
+						font-size: 14px;
 						&:first-of-type {
 							margin-top: 15px;
 						}
@@ -470,6 +478,7 @@ sub menu
 
 			&-text {
 				padding: 0 22px;
+				line-height: 15px;
 				&-head {
 					padding-top: 20px;
 					span {
@@ -553,6 +562,12 @@ sub menu
 		background: none;
 
 		&-img {
+			padding: 100px 0 0 0;
+			background: url(../img/our_goals/bg-our_goals-text-resp.png) no-repeat;
+			background-position: 50% -20px;
+			img {
+				width: 323px;
+			}
 		}
 	}
 
@@ -890,7 +905,7 @@ sub menu
 		font-size: 13px;
 
 		&-quick_menu {
-			margin-left: 17px;
+			padding-left: 33px;
 
 			&-head {
 				h4 {

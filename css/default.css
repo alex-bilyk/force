@@ -73,6 +73,10 @@ hr {
   hr {
     width: 165px; } }
 
+.line-header {
+  border-bottom: 1px solid #D9D9D9;
+  width: 100%; }
+
 .svg-sprite {
   display: none; }
 
