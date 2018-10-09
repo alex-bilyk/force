@@ -162,6 +162,13 @@ hr {
 @include xs-down {
   .btn {
     width: 246px;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding: 9px 35px;
+  }
+  .icon {
+    display: none;
   }
 }
 
