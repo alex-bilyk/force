@@ -625,12 +625,17 @@ sub menu
 
 			h3 {
 				font-size: 35px;
+				line-height: 35px;
 			}
 			p {
 				font-size: 12px;
+				line-height: 13px;
+				padding-top: 10px;
+				padding-bottom: 9px;
 			}
 			.btn-mix_match {
 				text-transform: none;
+				padding: 9px 30px;
 			}
 		}
 	}
@@ -696,19 +701,16 @@ sub menu
 	.multibrand {
 		padding: 0;
 
-		.img-big {
-			display: none;
-		}
 		.img-small {
 			top: -19%;
-			right: 12%;	
+			right: 6%;	
 		}
 
 		&-book {
 			img {
 				width: 300px;
 				top: -56%;
-				right: 7%;
+				right: 3%;
 				z-index: 1;
 			}
 		}
@@ -736,9 +738,6 @@ sub menu
 }
 
 @include xs-up {
-	.img-small {
-		display: none;
-	}
 }
 
 /* Finish Adaptive block */

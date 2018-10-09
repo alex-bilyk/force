@@ -93,6 +93,18 @@ img {
   max-width: 100%;
 }
 
+@include xs-down {
+  .img-big {
+    display: none;
+  }
+}
+
+@include xs-up {
+  .img-small {
+    display: none;
+  }
+}
+
 hr {
   text-align: left;
   width: 100%;
