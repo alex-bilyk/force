@@ -364,10 +364,10 @@ sub menu
 	&-slider {
 		&-item {
 			margin: 10px;
-	    	min-height: 320px;
 		}
 	}
 	&-box {
+    	min-height: 320px;
     	box-shadow: 0px 0 50px 1px rgba(20, 20, 21, 0.4);
 		img {
 			width: 100%;
@@ -581,6 +581,7 @@ sub menu
 			font-size: 20px;
 		}
 		.btn-mix_match {
+			padding: 13px 30px;
 			text-transform: uppercase;
 		}
 	}
@@ -656,6 +657,10 @@ sub menu
 				font-size: 20px;
 			}
 		}
+	}
+
+	.btn-multibrand {
+		padding: 13px 35px;
 	}
 
 }
@@ -796,6 +801,17 @@ sub menu
 					}
 				}
 				&:focus-within > .btn-clear {
+					-webkit-display: block;
+					-moz-display: block;
+					-ms-display: block;
+					-o-display: block;
+					display: block;
+				}
+				&:hover > .btn-clear {
+					-webkit-display: block;
+					-moz-display: block;
+					-ms-display: block;
+					-o-display: block;
 					display: block;
 				}
 			}
@@ -811,8 +827,16 @@ sub menu
 					color: $normal-grey;
 					background: $dark-grey url(../img/icons/arrow-normal-grey.svg) no-repeat;
 					background-size: 10px 10px;
-					background-position: 0px 50%;
+					background-position: 5px 50%;
 					padding-left: 20px;
+				}
+				&:-ms-input-placeholder {
+					color: $normal-grey;
+					background: $dark-grey url(../img/icons/arrow-normal-grey.svg) no-repeat;
+					background-size: 10px 10px;
+					background-position: 5px 50%;
+					padding-left: 20px;
+
 				}
 			}
 		}

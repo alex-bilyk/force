@@ -13,8 +13,9 @@
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
-.container-fluid {
-  max-width: 1920px; }
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto; }
 
 html {
   height: 100%; }
@@ -84,6 +85,7 @@ img {
           justify-content: flex-end; }
 
 .btn {
+  text-align: left;
   position: relative;
   color: #ffffff;
   font-family: 'Maven Pro', sans-serif;
@@ -93,7 +95,7 @@ img {
   font-weight: 500;
   -webkit-border-radius: 50px;
           border-radius: 50px;
-  padding: 13px;
+  padding: 13px 15px;
   width: 220px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
@@ -125,7 +127,7 @@ img {
 .icon {
   position: absolute;
   top: 42%;
-  right: 7px;
+  right: 10px;
   height: 10px;
   width: 10px;
   fill: currentColor;
@@ -405,9 +407,9 @@ sub menu
           background-size: contain;
   background-position: 50% -135px; }
   .why_us-slider-item {
-    margin: 10px;
-    min-height: 320px; }
+    margin: 10px; }
   .why_us-box {
+    min-height: 320px;
     -webkit-box-shadow: 0px 0 50px 1px rgba(20, 20, 21, 0.4);
             box-shadow: 0px 0 50px 1px rgba(20, 20, 21, 0.4); }
     .why_us-box img {
@@ -546,6 +548,7 @@ sub menu
     .mix_match-desc p {
       font-size: 20px; }
     .mix_match-desc .btn-mix_match {
+      padding: 13px 30px;
       text-transform: uppercase; }
 
 /* Start Adaptive block */
@@ -585,6 +588,8 @@ sub menu
         font-size: 50px; }
       .multibrand-desc-text p {
         font-size: 20px; }
+  .multibrand .btn-multibrand {
+    padding: 13px 35px; }
 
 /* Start Adaptive block */
 @media only screen and (max-width: 575px) {
@@ -666,6 +671,16 @@ sub menu
           width: 35px;
           height: 35px; }
       .footer-contact-form .contact-item:focus-within > .btn-clear {
+        -webkit-display: block;
+        -moz-display: block;
+        -ms-display: block;
+        -o-display: block;
+        display: block; }
+      .footer-contact-form .contact-item:hover > .btn-clear {
+        -webkit-display: block;
+        -moz-display: block;
+        -ms-display: block;
+        -o-display: block;
         display: block; }
     .footer-contact-form .contact-input, .footer-contact-form .contact-textarea {
       width: 100%;
@@ -681,7 +696,13 @@ sub menu
         background: #646464 url(../img/icons/arrow-normal-grey.svg) no-repeat;
         -webkit-background-size: 10px 10px;
                 background-size: 10px 10px;
-        background-position: 0px 50%;
+        background-position: 5px 50%;
+        padding-left: 20px; }
+      .footer-contact-form .contact-input:-ms-input-placeholder, .footer-contact-form .contact-textarea:-ms-input-placeholder {
+        color: #BABABA;
+        background: #646464 url(../img/icons/arrow-normal-grey.svg) no-repeat;
+        background-size: 10px 10px;
+        background-position: 5px 50%;
         padding-left: 20px; }
   .footer-contact-newsletter {
     padding-top: 10px; }
