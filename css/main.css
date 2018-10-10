@@ -555,6 +555,18 @@ hr {
       padding: 0px 0 0 0;
       background: none; } }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .why_us-slider {
+    position: relative;
+    top: -30%;
+    padding: 90px 0 0 0;
+    background: url(../img/why_us/bg-why_us.png) no-repeat;
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-position: 50% -35px; }
+  .why_us-box {
+    min-height: 330px; } }
+
 /* Start Adaptive block */
 /* Finish section Why_us */
 /* Start section Our_goals */
@@ -586,6 +598,10 @@ hr {
       .our_goals-img img {
         width: 323px; } }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our_goals-img {
+    background-position: 50% -30px; } }
+
 /* Start Adaptive block */
 /* Finish section Our_goals */
 /* Start section Mix_match */
@@ -604,7 +620,8 @@ hr {
     .mix_match-desc p {
       font-size: 20px; }
     .mix_match-desc .btn-mix_match {
-      padding: 13px 30px;
+      padding: 10px 30px;
+      margin-top: 10px;
       text-transform: uppercase; }
 
 /* Start Adaptive block */
@@ -624,6 +641,21 @@ hr {
       .mix_match-desc .btn-mix_match {
         text-transform: none;
         padding: 9px 30px; } }
+
+@media only screen and (min-width: 768px) {
+  .mix_match-desc p {
+    padding-right: 20%; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mix_match {
+    padding: 0; }
+    .mix_match .bg-mix_match-img {
+      width: 700px;
+      top: -30%; }
+    .mix_match-desc img {
+      top: -40%; }
+    .mix_match-desc p {
+      padding-right: 30%; } }
 
 /* Start Adaptive block */
 /* Finish section Mix_match */

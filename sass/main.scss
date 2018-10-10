@@ -495,6 +495,24 @@
 	}
 }
 
+@include md-lg {
+	.why_us {
+
+		&-slider {
+			position: relative;
+			top: -30%;
+			padding: 90px 0 0 0;
+			background: url(../img/why_us/bg-why_us.png) no-repeat;
+			background-size: contain;
+			background-position: 50% -35px;
+		}
+
+		&-box {
+			min-height: 330px;
+		}
+	}
+}
+
 /* Start Adaptive block */
 
 /* Finish section Why_us */
@@ -549,8 +567,17 @@
 			}
 		}
 	}
-
 }
+
+@include md-lg {
+	.our_goals {
+
+		&-img {
+			background-position: 50% -30px;
+		}
+	}
+}
+
 /* Start Adaptive block */
 
 /* Finish section Our_goals */
@@ -576,7 +603,8 @@
 			font-size: 20px;
 		}
 		.btn-mix_match {
-			padding: 13px 30px;
+			padding: 10px 30px;
+			margin-top: 10px;
 			text-transform: uppercase;
 		}
 	}
@@ -620,6 +648,39 @@
 	}
 
 }
+
+@include sm-up {
+	.mix_match {
+
+		&-desc {
+
+			p {
+				padding-right: 20%;
+			}
+		}
+	}
+}
+
+@include md-lg {
+	.mix_match {
+		padding: 0;
+
+		.bg-mix_match-img {
+			width: 700px;
+			top: -30%;
+		}
+
+		&-desc {
+			img {
+				top: -40%;
+			}
+			p {
+				padding-right: 30%;
+			}
+		}
+	}
+}
+
 /* Start Adaptive block */
 
 /* Finish section Mix_match */
