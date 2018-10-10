@@ -6,6 +6,124 @@
 
 /* Start section Header */
 
+
+
+ .main-nav-bar {
+    width: 40px;
+    height: 40px;
+    position: relative;
+	float: right;
+}
+
+@include xs-down {
+	.header {
+		&-top {
+			&-menu {
+				display: none;
+			}
+
+			&-lang {
+				display: none;
+			}
+		}
+	}
+}
+
+@include xs-up {
+	.main-nav, .overlay-nav {
+		display: none;
+	} 
+}
+
+.line {
+  width: 30px;
+  height: 4px;
+  background-color: $black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  --webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+  transform: translateY(-2px);
+  -webkit-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+    &:before, &:after {
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      background-color: $black;
+      display: inline-block;
+      content: '';
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+    }
+    &:before {
+      --webkit-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+      -o-transform: translateY(-8px);
+      transform: translateY(-8px); 
+    }
+    &:after {
+      --webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+      -o-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+}
+
+.overlay-nav {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,.8);
+  ul {
+    padding-top: 10%;
+    line-height: 2.5;
+    text-align: center;
+    list-style: none;
+    li a {
+      transition: all 0.2s;
+      &:hover {
+        text-decoration: none;
+        color: red;
+      }
+      color: #fff;
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+}
+.close-nav {
+  position: fixed;
+  font-size: 50px;
+  top: 5%;
+  right: 5%;
+  color: #fff;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .header {
 	background-image: url('../img/main/Force@work_banner.png');
 	background-repeat: no-repeat;

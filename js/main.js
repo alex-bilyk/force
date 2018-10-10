@@ -36,6 +36,20 @@ $(document).ready(function(){
 	});
 });
 
+/*Start block mobile_menu*/
+
+$(document).ready(function() {
+	var $nav = $('a.main-nav-bar');
+	$nav.click(function() {
+		$('.overlay-nav').show('slow');
+	})
+	$('.close-nav').click(function() {
+		$('.overlay-nav').hide('slow');
+	})
+});
+
+/*Finish block mobile_menu*/
+
 /*select*/
 
 (function() {

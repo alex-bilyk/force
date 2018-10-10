@@ -228,6 +228,101 @@ hr {
 
 /* List section for site*/
 /* Start section Header */
+.main-nav-bar {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  float: right; }
+
+@media only screen and (max-width: 575px) {
+  .header-top-menu {
+    display: none; }
+  .header-top-lang {
+    display: none; } }
+
+@media only screen and (min-width: 576px) {
+  .main-nav, .overlay-nav {
+    display: none; } }
+
+.line {
+  width: 30px;
+  height: 4px;
+  background-color: #000000;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  --webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s; }
+  .line:before, .line:after {
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    background-color: #000000;
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+  .line:before {
+    --webkit-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px); }
+  .line:after {
+    --webkit-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
+
+.overlay-nav {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .overlay-nav ul {
+    padding-top: 10%;
+    line-height: 2.5;
+    text-align: center;
+    list-style: none; }
+    .overlay-nav ul li a {
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      color: #fff;
+      font-size: 36px;
+      font-weight: 700; }
+      .overlay-nav ul li a:hover {
+        text-decoration: none;
+        color: red; }
+
+.close-nav {
+  position: fixed;
+  font-size: 50px;
+  top: 5%;
+  right: 5%;
+  color: #fff; }
+  .close-nav:hover {
+    cursor: pointer; }
+
 .header {
   background-image: url("../img/main/Force@work_banner.png");
   background-repeat: no-repeat;
