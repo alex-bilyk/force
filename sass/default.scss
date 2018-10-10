@@ -39,7 +39,6 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   background: #fff;
-  // line-height: 26px;
   font-size: 16px;
   min-width: 320px;
   overflow-x: hidden;
@@ -112,7 +111,7 @@ hr {
   margin: 0px;
 }
 
-@include xs-down {
+@include sm-down {
   hr {
     width: 165px;
   }
@@ -177,7 +176,7 @@ hr {
   }
 }
 
-@include xs-down {
+@include sm-down {
   .btn {
     width: 246px;
     text-align: center;
@@ -236,7 +235,7 @@ hr {
   }
 }
 
-@include xs-down {
+@include sm-down {
   .input, .textarea {
     min-height: 30px;
     font-size: 9px;
@@ -258,7 +257,7 @@ hr {
   }
 }
 
-@include xs-up {
+@include sm-up {
   .input, .textarea {
     min-height: 40px;
   }

@@ -6,124 +6,6 @@
 
 /* Start section Header */
 
-
-
- .main-nav-bar {
-    width: 40px;
-    height: 40px;
-    position: relative;
-	float: right;
-}
-
-@include xs-down {
-	.header {
-		&-top {
-			&-menu {
-				display: none;
-			}
-
-			&-lang {
-				display: none;
-			}
-		}
-	}
-}
-
-@include xs-up {
-	.main-nav, .overlay-nav {
-		display: none;
-	} 
-}
-
-.line {
-  width: 30px;
-  height: 4px;
-  background-color: $black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  --webkit-transform: translateY(-2px);
-  -ms-transform: translateY(-2px);
-  -o-transform: translateY(-2px);
-  transform: translateY(-2px);
-  -webkit-transition: transform 0.2s;
-  -o-transition: transform 0.2s;
-  transition: transform 0.2s;
-    &:before, &:after {
-      -webkit-transition: all 0.2s;
-      -o-transition: all 0.2s;
-      transition: all 0.2s;
-      background-color: $black;
-      display: inline-block;
-      content: '';
-      width: 30px;
-      height: 4px;
-      position: absolute;
-      top: 50%;
-      right: 0;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
-      border-radius: 5px;
-    }
-    &:before {
-      --webkit-transform: translateY(-8px);
-      -ms-transform: translateY(-8px);
-      -o-transform: translateY(-8px);
-      transform: translateY(-8px); 
-    }
-    &:after {
-      --webkit-transform: translateY(4px);
-      -ms-transform: translateY(4px);
-      -o-transform: translateY(4px);
-      transform: translateY(4px);
-    }
-}
-
-.overlay-nav {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: 99;
-  left: 0;
-  top: 0;
-  background-color: rgba(0,0,0,.8);
-  ul {
-    padding-top: 10%;
-    line-height: 2.5;
-    text-align: center;
-    list-style: none;
-    li a {
-      transition: all 0.2s;
-      &:hover {
-        text-decoration: none;
-        color: red;
-      }
-      color: #fff;
-      font-size: 36px;
-      font-weight: 700;
-    }
-  }
-}
-.close-nav {
-  position: fixed;
-  font-size: 50px;
-  top: 5%;
-  right: 5%;
-  color: #fff;
-  &:hover {
-    cursor: pointer;
-  }
-}
-
 .header {
 	background-image: url('../img/main/Force@work_banner.png');
 	background-repeat: no-repeat;
@@ -217,6 +99,107 @@
 
 	/* Finish block Main */
 
+	/* Start block mobile_menu */
+
+	 .main-nav-bar {
+	    width: 40px;
+	    height: 40px;
+	    position: relative;
+		float: right;
+	}
+
+	.line {
+	  width: 30px;
+	  height: 4px;
+	  background-color: $black;
+	  display: block;
+	  position: absolute;
+	  right: 0;
+	  top: 50%;
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -ms-border-radius: 5px;
+	  -o-border-radius: 5px;
+	  border-radius: 5px;
+	  -webkit-transform: translateY(-2px);
+	  -ms-transform: translateY(-2px);
+	  -o-transform: translateY(-2px);
+	  transform: translateY(-2px);
+	  -webkit-transition: transform 0.2s;
+	  -o-transition: transform 0.2s;
+	  transition: transform 0.2s;
+	    &:before, &:after {
+	      -webkit-transition: all 0.2s;
+	      -o-transition: all 0.2s;
+	      transition: all 0.2s;
+	      background-color: $black;
+	      display: inline-block;
+	      content: '';
+	      width: 30px;
+	      height: 4px;
+	      position: absolute;
+	      top: 50%;
+	      right: 0;
+	      -webkit-border-radius: 5px;
+	      -moz-border-radius: 5px;
+	      -ms-border-radius: 5px;
+	      -o-border-radius: 5px;
+	      border-radius: 5px;
+	    }
+	    &:before {
+	      -webkit-transform: translateY(-8px);
+	      -ms-transform: translateY(-8px);
+	      -o-transform: translateY(-8px);
+	      transform: translateY(-8px); 
+	    }
+	    &:after {
+	      -webkit-transform: translateY(4px);
+	      -ms-transform: translateY(4px);
+	      -o-transform: translateY(4px);
+	      transform: translateY(4px);
+	    }
+	}
+
+	.overlay-nav {
+	  display: none;
+	  position: fixed;
+	  width: 100%;
+	  height: 100vh;
+	  overflow-y: scroll;
+	  z-index: 99;
+	  left: 0;
+	  top: 0;
+	  background-color: rgba(0,0,0,.8);
+	  ul {
+	    padding-top: 15%;
+	    line-height: 2.5;
+	    text-align: center;
+	    list-style: none;
+	    li a {
+	      transition: all 0.2s;
+	      &:hover {
+	        text-decoration: none;
+	        color: $orange;
+	      }
+	      color: #fff;
+	      font-size: 20px;
+	      font-weight: 500;
+	    }
+	  }
+	}
+	.close-nav {
+	  position: fixed;
+	  font-size: 50px;
+	  top: 3%;
+	  right: 5%;
+	  color: $white;
+	  &:hover {
+	    cursor: pointer;
+	  }
+	}
+
+	/* Finish block mobile_menu */
+
 
 }
 /* Start Adaptive block for section Header */
@@ -229,10 +212,10 @@
 
 }
 
-@include sm-down {
+@include xs-down {
 }
 
-@include xs-down {
+@include sm-down {
 
 	.header {
 
@@ -305,175 +288,13 @@
 
 }
 
+@include sm-up {
+	.main-nav, .overlay-nav {
+		display: none;
+	} 
+}
+
 /* Finish Adaptive block for section Header */
-/* 
-// Mobile menu
-
-.dws-menu *{
- margin: 0;
- padding: 0;
-}
-.dws-menu ul,
-.dws-menu ol{
- list-style: none;
-}
-.dws-menu > ul{
- display: flex;
- justify-content: center;
-}
-.dws-menu > ul li{
- position: relative;
- border-right: 1px solid #c7c8ca;
-}
-.dws-menu > ul li:first-child{
- border-left: 1px solid #b2b3b5;
-}
-.dws-menu > ul li:last-child{
- border-right: 1px solid #babbbd;
-}
-.dws-menu > ul li > a i.fa{
- position: absolute;
- top: 15px;
- left: 12px;
- font-size: 18px;
-}
-.dws-menu > ul li a{
- display: block;
- Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3
- background: rgb(201,201,201); Old browsers
- background: -moz-linear-gradient(top,  rgba(201,201,201,1) 0%, rgba(246,246,246,1) 2%, rgba(196,197,199,1) 98%, rgba(117,117,119,1) 100%); FF3.6-15
- background: -webkit-linear-gradient(top,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); Chrome10-25,Safari5.1-6
- background: linear-gradient(to bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 ); IE6-9
-
- padding: 15px 30px 15px 40px;
- font-size: 14px;
- color: #454547;
- text-decoration: none;
- text-transform:uppercase;
- transition: all 0.3s ease;
-}
-.dws-menu li a:hover{
- Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0e1e5+0,454547+2,454547+98,e0e1e5+100
- background: rgb(224,225,229); Old browsers
- background: -moz-linear-gradient(top,  rgba(224,225,229,1) 0%, rgba(69,69,71,1) 2%, rgba(69,69,71,1) 98%, rgba(224,225,229,1) 100%); FF3.6-15
- background: -webkit-linear-gradient(top,  rgba(224,225,229,1) 0%,rgba(69,69,71,1) 2%,rgba(69,69,71,1) 98%,rgba(224,225,229,1) 100%); Chrome10-25,Safari5.1-6
- background: linear-gradient(to bottom,  rgba(224,225,229,1) 0%,rgba(69,69,71,1) 2%,rgba(69,69,71,1) 98%,rgba(224,225,229,1) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e1e5', endColorstr='#e0e1e5',GradientType=0 ); IE6-9
-
- color: #ffffff;
- box-shadow: 1px 5px 10px -5px black;
- transition: all 0.3s ease;
-}
-
-sub menu
-.dws-menu li ul{
- position: absolute;
- min-width: 150px;
- display: none;
-}
-.dws-menu li > ul li{
- border: 1px solid #c7c8ca;
-}
-.dws-menu li > ul li a{
- padding: 10px;
- text-transform: none;
- background: #e4e4e5;
-}
-.dws-menu li > ul li ul{
- position: absolute;
- right: -150px;
- top: 0;
-}
-.dws-menu li:hover > ul{
- display: block;
-}
-
-// Adaptive mobile menu
-
-.dws-menu [type="checkbox"],
-.dws-menu label.toggleSubmenu{
- display: none;
-}
-.dws-menu label.toggleMenu{
- Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3
- background: rgb(201,201,201); Old browsers
- background: -moz-linear-gradient(top,  rgba(201,201,201,1) 0%, rgba(246,246,246,1) 2%, rgba(196,197,199,1) 98%, rgba(117,117,119,1) 100%); FF3.6-15
- background: -webkit-linear-gradient(top,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); Chrome10-25,Safari5.1-6
- background: linear-gradient(to bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 ); IE6-9
-
- display: none;
- padding: 15px 40px;
- text-transform: uppercase;
- font-size: 14px;
- cursor: pointer;
- position: relative;
-}
-
-.dws-menu label.toggleMenu .fa{
- position: absolute;
- top: 15px;
- left: 12px;
- font-size: 18px;
-}
-@media all and (max-width: 992px){
- .dws-menu{
-  overflow: hidden;
- }
- .dws-menu ul{
-  display: block;
-  max-height: 0;
-  transition: max-height 0.3s;
- }
- .dws-menu li>ul li ul{
-  position: absolute;
-  right: auto;
-  top: auto;
- }
- .dws-menu label.toggleMenu{
-  display: block;
- }
- input.toggleMenu:checked + label.toggleMenu{
-  background: #000;
-  color: #fff;
- }
- input.toggleMenu:checked ~ ul,
- input.toggleSubmenu:checked ~ ul{
-  display: block;
-  position: relative;
-  max-height: 5000px;
-  transition: max-height 2s ease-in;
- }
- .dws-menu label.toggleSubmenu{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  display: block;
- }
- input.toggleSubmenu:checked ~ a{
-  background: #454547;
-  color: #fff;
- }
- .dws-menu label.toggleSubmenu .fa:before{
-  content: "\f0d7";
-  color: #454547;
- }
- .dws-menu label.toggleSubmenu .fa{
-  position: absolute;
-  top: 15px;
-  right: 30px;
- }
- .dws-menu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before{
-  content: "\f0d8";
-  color: #ffffff;
- }
-}
-
-// Mobile menu */
 
 /* Finish section Header */
 
@@ -487,6 +308,9 @@ sub menu
 	background-size: contain;
 	background-position: 50% -135px;
 	// top: -35%;
+	h3 {
+		display: none;
+	}
 
 	&-slider {
 		&-item {
@@ -576,10 +400,10 @@ sub menu
 
 }
 
-@include sm-down {
+@include xs-down {
 }
 
-@include xs-down {
+@include sm-down {
 
 	.why_us {
 		    padding: 25px 0 0px 0;
@@ -648,6 +472,9 @@ sub menu
 	padding: 0 0 300px 0;
 	background: url(../img/our_goals/bg-our_goals-img.png) no-repeat;
 	background-position: -50px -10px;
+	h3 {
+		display: none;
+	}
 
 	&-img {
 		padding: 100px 0 0 0;
@@ -671,10 +498,10 @@ sub menu
 
 }
 
-@include sm-down {
+@include xs-down {
 }
 
-@include xs-down {
+@include sm-down {
 
 	.our_goals {
 		background: none;
@@ -730,10 +557,10 @@ sub menu
 
 }
 
-@include sm-down {
+@include xs-down {
 }
 
-@include xs-down {
+@include sm-down {
 	
 	.mix_match {
 		margin-bottom: 255px;
@@ -811,10 +638,10 @@ sub menu
 
 }
 
-@include sm-down {
+@include xs-down {
 }
 
-@include xs-down {
+@include sm-down {
 
 	.multibrand {
 		padding: 0;
@@ -914,7 +741,7 @@ sub menu
 			}
 			&-block_3 {
 				nav {
-					ul li:last-of-type {
+					ul li:hover {
 						color: $yellow;
 					}
 				}
@@ -1013,10 +840,10 @@ sub menu
 
 }
 
-@include sm-down {
+@include xs-down {
 }
 
-@include xs-down {
+@include sm-down {
 
 	.footer {
 		font-size: 13px;
@@ -1055,6 +882,9 @@ sub menu
 					margin-top: 25px;
 					li {
 						margin-bottom: 25px;
+						&:hover {
+							color: $yellow;
+						}
 					}
 				}
 
@@ -1144,7 +974,7 @@ sub menu
 
 }
 
-@include xs-up {
+@include sm-up {
 
 	.footer {
 
@@ -1164,7 +994,6 @@ sub menu
 /* Finish section Footer */
 
 /* Start styles from the file cs-skin-border */
-.cs-select > span, .cs-select .cs-selected span {}
 
 .cs-select > span::after, .cs-select .cs-selected span::after {
 	content: '';
@@ -1174,6 +1003,11 @@ sub menu
 	background-size: 6px 10px;
 	background-position: 0px -6px;
 	transform: rotate(90deg);
+	background: url(../img/icons/arrow-black.svg) no-repeat;
+    -webkit-background-size: 6px 10px;
+    background-size: 6px 10px;
+    top: 45%;
+    left: 60%;
 
 }
 
@@ -1187,9 +1021,6 @@ div.cs-skin-border {
 	&:hover {
 		color: $orange;
 	}
-}
-
-div.cs-active {
 }
 
 .cs-skin-border.cs-active > span {
@@ -1218,7 +1049,7 @@ div.cs-select {
 	display: inline-block;
 	vertical-align: middle;
 	position: relative;
-	text-align: left;
+	text-align: center;
 	z-index: 100;
 	width: 100%;
 	-webkit-touch-callout: none;
@@ -1253,8 +1084,6 @@ div.cs-select:focus {
 .cs-select .cs-selected span::after {
 	speak: none;
 	position: absolute;
-	top: 50%;
-	left: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -1292,5 +1121,26 @@ div.cs-select:focus {
 	cursor: default;
 }
 
+/* Start adaptive block for cs-select */
 
+@include sm-down {
+	div.cs-select {
+		width: 200px;
+		background: #fff;
+		margin-top: 30px;
+	}
+	.cs-skin-border > span {
+		font-size: 20px;
+	}
+	.header .overlay-nav ul .cs-select ul {
+		padding-top: 0;
+		font-size: 18px;
+	}
+	.cs-select ul span {
+		padding: 0;
+	}
+}
+
+/* Finish adaptive block for cs-select */
+	
 /* Finish styles from the file cs-select */
