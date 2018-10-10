@@ -46,7 +46,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 h1 {
-  font-size: 80px; }
+  font-size: 80px;
+  line-height: 75px; }
 
 h2 {
   font-size: 20px; }
@@ -673,6 +674,26 @@ hr {
         line-height: 13px; }
       .multibrand-desc-text a {
         margin-top: 15px; } }
+
+@media only screen and (min-width: 992px) {
+  .multibrand-book img {
+    top: -8%; } }
+
+@media only screen and (min-width: 768px) {
+  .multibrand-desc-text p {
+    padding-right: 27%; }
+  .multibrand-desc-text a {
+    margin-right: 30px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .multibrand {
+    padding: 50px 0 25px 0; }
+    .multibrand .img-big {
+      width: 98%;
+      top: -9%; }
+    .multibrand-book img {
+      top: 0%;
+      width: 400px; } }
 
 /* Finish Adaptive block */
 /* Finish section Multibrand */

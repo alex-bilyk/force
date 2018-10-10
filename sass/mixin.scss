@@ -78,3 +78,9 @@ $screen-lg-up: 1200px;
     @content
   }
 }
+
+@mixin md-lg {
+  @media (min-width: $screen-md-up) and  (max-width: $screen-lg-down) {
+    @content
+  }
+}

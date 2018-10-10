@@ -716,7 +716,50 @@
 
 }
 
-@include xs-up {
+@include md-up {
+	.multibrand {
+
+		&-book {
+			img {
+				top: -8%;
+			}
+		}
+	}
+}
+
+@include sm-up {
+	.multibrand {
+
+		&-desc {
+
+			&-text {
+				p {
+					padding-right: 27%;
+				}
+				a {
+					margin-right: 30px;
+				}
+			}
+		}
+	}
+}
+
+@include md-lg {
+	.multibrand {
+		padding: 50px 0 25px 0;
+
+		.img-big {
+			width: 98%;
+			top: -9%;	
+		}
+
+		&-book {
+			img {
+				top: 0%;
+				width: 400px;
+			}
+		}
+	}
 }
 
 /* Finish Adaptive block */
