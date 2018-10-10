@@ -361,6 +361,10 @@ hr {
       cursor: pointer; }
 
 /* Start Adaptive block for section Header */
+@media only screen and (max-width: 991px) {
+  .header-top-menu, .header-top-lang {
+    display: none; } }
+
 @media only screen and (max-width: 767px) {
   .header-top-logo img {
     width: 112px;
@@ -401,7 +405,7 @@ hr {
           .header .main-text-list ul li:first-of-type {
             margin-top: 15px; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .main-nav, .overlay-nav {
     display: none; } }
 

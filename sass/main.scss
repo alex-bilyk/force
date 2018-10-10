@@ -210,7 +210,14 @@
 }
 
 @include md-down {
-
+	.header {
+		
+		&-top {
+			&-menu, &-lang {
+				display: none;
+			}
+		}
+	}
 }
 
 @include xs-down {
@@ -289,7 +296,7 @@
 
 }
 
-@include sm-up {
+@include md-up {
 	.main-nav, .overlay-nav {
 		display: none;
 	} 
