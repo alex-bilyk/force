@@ -11,6 +11,7 @@
 	background-repeat: no-repeat;
 	background-position: center 0px;
 	background-size: cover;
+	padding-bottom: 120px;
 
 	/* Start block Header-top and Header-bottom */
 
@@ -303,16 +304,18 @@
 
 .why_us {
 	position: relative;
-	padding: 75px 0 20px 0;
-	background: url(../img/why_us/bg-why_us.png) no-repeat;
-	background-size: contain;
-	background-position: 50% -135px;
-	// top: -35%;
+	padding: 10px 0 20px 0;
 	h3 {
 		display: none;
 	}
 
 	&-slider {
+		position: relative;
+		top: -36%;
+		padding: 100px 0 0 0;
+		background: url(../img/why_us/bg-why_us.png) no-repeat;
+		background-size: contain;
+		background-position: 50% -55px;
 		&-item {
 			margin: 10px;
 		}
@@ -328,15 +331,17 @@
 		&-text {
 			min-height: 10px;
 			display: flex;
+			flex-direction: column;
 			justify-content: center;
+			align-items: center;
 			text-align: center;
-			align-items: flex-start;
 			padding: 10px 15px;
 
 			&-head {
+				padding: 0 15px;
 				span {
 					font-weight: 600;
-					font-size: 18px;
+					font-size: 16px;
 					color: $black;
 				}
 			}
@@ -400,16 +405,20 @@
 
 }
 
-@include xs-down {
-}
-
 @include sm-down {
-
+	.header {
+		padding-bottom: 0px;
+	}
 	.why_us {
-		    padding: 25px 0 0px 0;
-		    background-position: 50% -20px;
+		padding: 100px 0 0 0;
+		background: url(../img/why_us/bg-why_us.png) no-repeat;
+		background-size: contain;
+		background-position: 50% -40px;
 
 		&-slider {
+			top: -22%;
+			padding: 50px 0 0 0;
+			background: none;
 			&-item {
 
 				padding: 0 25px;
@@ -461,6 +470,31 @@
 	}
 
 }
+
+@include xs-down {
+	.why_us {
+		background-position: 50% -10px;
+
+		&-slider {
+			top: -11%;
+			padding: 0px 0 0 0;
+			background: none;
+		}
+	}
+}
+
+@include es-down {
+	.why_us {
+		background-position: 50% -10px;
+
+		&-slider {
+			top: -20%;
+			padding: 0px 0 0 0;
+			background: none;
+		}
+	}
+}
+
 /* Start Adaptive block */
 
 /* Finish section Why_us */

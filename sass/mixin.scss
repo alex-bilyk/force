@@ -1,3 +1,4 @@
+$screen-es-down: 480px;
 $screen-xs-down: 575px;
 $screen-sm-down: 767px;
 $screen-md-down: 991px;
@@ -29,6 +30,12 @@ $screen-lg-up: 1200px;
 
 @mixin xs-down {
   @media only screen and (max-width: $screen-xs-down) {
+    @content
+  }
+}
+
+@mixin es-down {
+  @media only screen and (max-width: $screen-es-down) {
     @content
   }
 }
