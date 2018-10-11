@@ -246,91 +246,38 @@ hr {
     -webkit-transform: scale(1.04);
         -ms-transform: scale(1.04);
             transform: scale(1.04); }
-  .fixed-banner-head {
-    width: 154px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+  .fixed .banner-head {
+    width: 151px;
+    height: 100px;
     text-align: center; }
-    .fixed-banner-head a {
-      padding: 30px 10px;
+    .fixed .banner-head a {
+      padding: 16px 10px;
       display: block;
-      padding-bottom: 16px;
+      padding-bottom: 16px; }
+    .fixed .banner-head-logo {
+      margin-bottom: 10px; }
+    .fixed .banner-head-txt {
+      color: #FF9300;
+      font-size: 13px;
+      line-height: 1.3; }
+  .fixed .banner-body {
+    background: #FF9300;
+    width: 151px;
+    height: 100px;
+    text-align: center; }
+    .fixed .banner-body a {
       padding: 16px 10px;
       display: block; }
-  .fixed-banner-body {
-    background: red;
-    width: 154px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    text-align: center; }
-  .fixed-banner-logo {
-    margin-bottom: 10px;
-    margin-bottom: 4px; }
-    .fixed-banner-logo p {
-      font: 12px;
-      color: #FF9300;
-      font-family: "Montserrat"; }
-  .fixed-banner-txt {
-    color: #FF9300;
-    font-size: 13px;
-    line-height: 1.3;
-    color: #fff;
-    font-size: 13px;
-    line-height: 1.3;
-    color: #FF9300;
-    font-size: 13px;
-    line-height: 1.3; }
+    .fixed .banner-body-logo {
+      margin-bottom: 4px; }
+    .fixed .banner-body-txt p {
+      color: #fff;
+      font-size: 13px;
+      line-height: 1.3; }
 
-.fixed .banner .head {
-  width: 154px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center; }
-
-.fixed .banner .head a {
-  padding: 30px 10px;
-  display: block;
-  padding-bottom: 16px; }
-
-.fixed .banner .head .logo {
-  margin-bottom: 10px; }
-
-.fixed .banner .head .logo p {
-  font: 12px;
-  color: #FF9300;
-  font-family: "Montserrat"; }
-
-.fixed .banner .head .txt {
-  color: #FF9300;
-  font-size: 13px;
-  line-height: 1.3; }
-
-.fixed .banner .body {
-  background: #FF9300;
-  width: 154px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center; }
-
-.fixed .banner .body a {
-  padding: 16px 10px;
-  display: block; }
-
-.fixed .banner .body .logo {
-  margin-bottom: 4px; }
-
-.fixed .banner .body .txt {
-  color: #fff;
-  font-size: 13px;
-  line-height: 1.3; }
-
-.fixed:hover {
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  -webkit-transform: scale(1.04);
-      -ms-transform: scale(1.04);
-          transform: scale(1.04); }
+@media only screen and (max-width: 991px) {
+  .fixed {
+    display: none; } }
 
 /* Start section Header */
 .header {
