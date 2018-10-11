@@ -8,9 +8,11 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .wrapper {
   max-width: 1920px;
@@ -122,6 +124,10 @@ hr {
   width: 220px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+  .btn:hover {
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02); }
   .btn:hover {
     background-color: transparent;
     color: #FF9300;

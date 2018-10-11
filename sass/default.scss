@@ -25,6 +25,11 @@ $brown: #695454;
 * {
   box-sizing: border-box;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .wrapper {
@@ -156,6 +161,9 @@ hr {
   padding: 13px 15px;
   width: 220px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  &:hover {
+  transform: scale(1.02);
+  }
   &:hover {
     background-color: transparent;
     color: $orange;
