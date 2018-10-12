@@ -109,6 +109,17 @@ hr {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
+.button a {
+  width: 240px;
+  height: 40px;
+  display: inline-block;
+  padding-right: 14px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  padding-left: 22px;
+  text-transform: none;
+  font: 14px/38px "Montserrat-Light"; }
+
 .btn {
   text-align: left;
   position: relative;
@@ -125,12 +136,11 @@ hr {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
   .btn:hover {
-    -webkit-transform: scale(1.02);
-        -ms-transform: scale(1.02);
-            transform: scale(1.02); }
-  .btn:hover {
     background-color: transparent;
     color: #FF9300;
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s; }

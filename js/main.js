@@ -46,9 +46,14 @@ $(document).ready(function() {
 	$('.close-nav').click(function() {
 		$('.overlay-nav').hide('slow');
 	})
+
+	$(".mine ul li").hover(function() {
+		$(this).find("p").slideToggle(200);
+	})
 });
 
 /*Finish block mobile_menu*/
+
 
 /*select*/
 

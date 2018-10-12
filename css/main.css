@@ -110,6 +110,17 @@ hr {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
+.button a {
+  width: 240px;
+  height: 40px;
+  display: inline-block;
+  padding-right: 14px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  padding-left: 22px;
+  text-transform: none;
+  font: 14px/38px "Montserrat-Light"; }
+
 .btn {
   text-align: left;
   position: relative;
@@ -126,12 +137,11 @@ hr {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
   .btn:hover {
-    -webkit-transform: scale(1.02);
-        -ms-transform: scale(1.02);
-            transform: scale(1.02); }
-  .btn:hover {
     background-color: transparent;
     color: #FF9300;
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s; }
@@ -286,12 +296,14 @@ hr {
     display: none; } }
 
 /* Start section Header */
-.header {
+body {
   background-image: url("../img/main/Force@work_banner.png");
   background-repeat: no-repeat;
   background-position: center 0px;
-  -webkit-background-size: cover;
-          background-size: cover;
+  -webkit-background-size: 2000px 2000px;
+          background-size: 2000px; }
+
+.header {
   padding-bottom: 120px;
   /* Start block Header-top and Header-bottom */
   /* Finish block Header-top and Header-bottom */
@@ -325,20 +337,48 @@ hr {
         font-family: 'Maven Pro', sans-serif;
         font-weight: 400;
         text-transform: none; }
-      .header .main-text p {
-        font-size: 14px;
-        padding: 25px 0; }
       .header .main-text-list {
-        width: 220px;
         font-family: 'Maven Pro', sans-serif; }
         .header .main-text-list ul li {
-          background: url(../img/icons/arrow.svg) no-repeat;
-          background-position: right center;
-          -webkit-background-size: 6px 10px;
-                  background-size: 6px 10px; }
+          margin-bottom: 8px;
+          width: 250px; }
+          .header .main-text-list ul li:hover p {
+            display: block;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+            transition: 0.5s; }
           .header .main-text-list ul li a {
-            width: 200px;
-            text-decoration: none; }
+            width: 220px;
+            text-decoration: none;
+            color: #545469;
+            display: inline-block;
+            width: 238px;
+            padding-bottom: 3px;
+            background: url(../img/icons/arrow.png) no-repeat right 10px center;
+            font: 14px/37px "Montserrat";
+            padding-right: 20px; }
+            .header .main-text-list ul li a:hover {
+              background: #ff9300 url(../img/icons/arr_white.png) no-repeat right 10px center;
+              color: #fff;
+              -webkit-box-shadow: 0 7px 6px rgba(0, 0, 0, 0.16);
+                      box-shadow: 0 7px 6px rgba(0, 0, 0, 0.16);
+              -webkit-transition: all 0.3s;
+              -o-transition: all 0.3s;
+              transition: all 0.3s; }
+              .header .main-text-list ul li a:hover span {
+                color: #ffffff; }
+          .header .main-text-list ul li p {
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            font-size: 14px;
+            padding: 25px 0;
+            display: none;
+            display: none;
+            font-size: 14px;
+            width: 410px;
+            color: #969696;
+            padding: 20px 0; }
   .header .main-nav-bar {
     width: 40px;
     height: 40px;
@@ -453,25 +493,12 @@ hr {
       .header .main-text h2 {
         font-size: 12px;
         padding: 25px 0; }
-      .header .main-text .btn-main {
-        width: 246px;
-        padding: 12px 0; }
-      .header .main-text p {
-        display: none; }
-      .header .main-text-list {
-        width: 246px;
-        margin: 0 auto; }
-        .header .main-text-list ul li {
-          background: none;
-          border: 1px solid #FF9300;
-          -webkit-border-radius: 50px;
-                  border-radius: 50px;
-          width: 246px;
-          padding: 7px 0;
-          margin-top: 10px;
-          font-size: 14px; }
-          .header .main-text-list ul li:first-of-type {
-            margin-top: 15px; } }
+      .header .main-text-list ul li {
+        width: 100%; }
+        .header .main-text-list ul li a {
+          margin: 0 auto; }
+        .header .main-text-list ul li p {
+          width: 100%; } }
 
 @media only screen and (min-width: 992px) {
   .main-nav, .overlay-nav {

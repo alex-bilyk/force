@@ -75,12 +75,18 @@
 }
 
 /* Start section Header */
-
-.header {
+body {
 	background-image: url('../img/main/Force@work_banner.png');
 	background-repeat: no-repeat;
 	background-position: center 0px;
-	background-size: cover;
+	background-size: 2000px;
+	
+}
+.header {
+	// background-image: url('../img/main/Force@work_banner.png');
+	// background-repeat: no-repeat;
+	// background-position: center 0px;
+	// background-size: cover;
 	padding-bottom: 120px;
 
 	/* Start block Header-top and Header-bottom */
@@ -149,21 +155,50 @@
 				font-weight: 400;
 				text-transform: none;
 			}
-			p {
-				font-size: 14px;
-				padding: 25px 0;
-			}
 
 			&-list {
-				width: 220px;
 				font-family: 'Maven Pro', sans-serif;
+
 				ul li {
-					background: url(../img/icons/arrow.svg) no-repeat;
-					background-position: right center;
-					background-size: 6px 10px;
+					margin-bottom: 8px;
+					width: 250px;
+					&:hover {
+						p {
+							display: block;
+							transition: 0.5s;
+						}
+					}
 					a {
-						width: 200px;
+						width: 220px;
 						text-decoration: none;
+						color: #545469;
+						display: inline-block;
+						width: 238px;
+						padding-bottom: 3px;
+						background: url(../img/icons/arrow.png) no-repeat right 10px center;
+						font: 14px/37px "Montserrat";
+						padding-right: 20px;
+						&:hover {
+							background: #ff9300 url(../img/icons/arr_white.png) no-repeat right 10px center;
+							color: #fff;
+							box-shadow: 0 7px 6px rgba(0, 0, 0, 0.16);
+							transition: all 0.3s;
+
+							span {
+								color: $white;
+							}
+						}
+					}
+					p {
+							transition: all 0.3s;
+						font-size: 14px;
+						padding: 25px 0;
+						display: none;
+						display: none;
+						font-size: 14px;
+						width: 410px;
+						color: #969696;
+						padding: 20px 0;
 					}
 				}
 			}
@@ -347,27 +382,15 @@
 					font-size: 12px;
 					padding: 25px 0;
 				}
-				.btn-main {
-					width: 246px;
-					padding: 12px 0;
-				}
-				p {
-					display: none;
-				}
 
 				&-list {
-					width: 246px;
-					margin: 0 auto;
 					ul li {
-						background: none;
-						border: 1px solid  $orange;
-						border-radius: 50px;
-						width: 246px;
-						padding: 7px 0;					
-						margin-top: 10px;
-						font-size: 14px;
-						&:first-of-type {
-							margin-top: 15px;
+						width: 100%;
+						a {
+							margin: 0 auto;	
+						}
+						p {
+							width: 100%;
 						}
 					}
 				}
