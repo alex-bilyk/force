@@ -306,8 +306,8 @@ hr {
 
 .header {
   background: url(../img/main/main-1920.jpg) no-repeat center 0px;
-  -webkit-background-size: cover;
-          background-size: cover;
+  -webkit-background-size: 120% 1000px;
+          background-size: 120% 1000px;
   padding-bottom: 120px;
   /* Start block Header-top and Header-bottom */
   /* Finish block Header-top and Header-bottom */
@@ -456,44 +456,55 @@ hr {
 
 /* Start Adaptive block for section Header */
 @media only screen and (max-width: 991px) {
-  .header-top-menu, .header-top-lang {
-    display: none; } }
+  .header {
+    -webkit-background-size: 130% 850px;
+            background-size: 130% 850px; }
+    .header-top-menu, .header-top-lang {
+      display: none; } }
 
 @media only screen and (max-width: 767px) {
-  .header-top {
-    padding: 10px 0 0px 0; }
-    .header-top-logo img {
-      width: 112px;
-      height: 18px; }
-    .header-top-menu, .header-top-lang {
+  .header {
+    -webkit-background-size: 120% 600px;
+            background-size: 120% 600px; }
+    .header-top {
+      padding: 10px 0 0px 0; }
+      .header-top-logo img {
+        width: 112px;
+        height: 18px; }
+      .header-top-menu, .header-top-lang {
+        display: none; }
+    .header-bottom-text_1 {
       display: none; }
-  .header-bottom-text_1 {
-    display: none; }
-  .header-bottom-text_2 {
-    display: block;
-    position: relative;
-    top: -10px; }
-  .header-bottom-text span {
-    font-size: 9px; }
-  .header-bottom-submenu {
-    display: none; }
-  .header .main {
-    padding: 0 0 25px 0; }
-    .header .main-text {
-      padding-top: 30px;
-      text-align: center; }
-      .header .main-text h1 {
-        font-size: 32px;
-        line-height: 35px; }
-      .header .main-text h2 {
-        font-size: 12px;
-        padding: 25px 0; }
-      .header .main-text-list ul li {
-        width: 100%; }
-        .header .main-text-list ul li a {
-          margin: 0 auto; }
-        .header .main-text-list ul li p {
-          width: 100%; } }
+    .header-bottom-text_2 {
+      display: block;
+      position: relative;
+      top: -10px; }
+    .header-bottom-text span {
+      font-size: 9px; }
+    .header-bottom-submenu {
+      display: none; }
+    .header .main {
+      padding: 0 0 25px 0; }
+      .header .main-text {
+        padding-top: 30px;
+        text-align: center; }
+        .header .main-text h1 {
+          font-size: 32px;
+          line-height: 35px; }
+        .header .main-text h2 {
+          font-size: 12px;
+          padding: 25px 0; }
+        .header .main-text-list ul li {
+          width: 100%; }
+          .header .main-text-list ul li a {
+            margin: 0 auto; }
+          .header .main-text-list ul li p {
+            width: 100%; } }
+
+@media only screen and (max-width: 575px) {
+  .header {
+    -webkit-background-size: 140% 550px;
+            background-size: 140% 550px; } }
 
 @media only screen and (min-width: 992px) {
   .main-nav, .overlay-nav {

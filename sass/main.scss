@@ -76,7 +76,7 @@
 
 .header {
     background: url(../img/main/main-1920.jpg) no-repeat center 0px;
-	background-size: cover;
+	background-size: 120% 1000px;
 	padding-bottom: 120px;
 
 	/* Start block Header-top and Header-bottom */
@@ -303,6 +303,7 @@
 
 @include md-down {
 	.header {
+		background-size: 130% 850px;
 		
 		&-top {
 			&-menu, &-lang {
@@ -312,12 +313,10 @@
 	}
 }
 
-@include xs-down {
-}
-
 @include sm-down {
 
 	.header {
+		background-size: 120% 600px;
 
 		&-top {
 			padding: 10px 0 0px 0;
@@ -384,6 +383,14 @@
 
 	}
 
+}
+
+
+@include xs-down {
+
+	.header {
+		background-size: 140% 550px;
+	}
 }
 
 @include md-up {
