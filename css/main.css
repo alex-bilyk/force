@@ -170,7 +170,7 @@ hr {
   .icon {
     display: none; } }
 
-.btn-send {
+.btn-send button {
   position: absolute;
   top: 2.5px;
   right: 5px;
@@ -184,8 +184,9 @@ hr {
   -webkit-border-radius: 6px;
           border-radius: 6px;
   cursor: pointer; }
-  .btn-send-textarea {
-    top: 10px; }
+
+.btn-send-textarea button {
+  top: 10px; }
 
 .icon {
   position: absolute;
@@ -344,8 +345,6 @@ hr {
         font-family: 'Maven Pro', sans-serif; }
         .header .main-text-list ul li {
           width: 250px; }
-          .header .main-text-list ul li:hover p {
-            /* display: block; */ }
           .header .main-text-list ul li a {
             width: 220px;
             text-decoration: none;
@@ -1076,10 +1075,10 @@ hr {
             display: inline-block;
             width: 21px;
             height: 21px; }
-    .footer .btn-send {
+    .footer .btn-send button {
       top: 2.5px;
       right: 5px; }
-      .footer .btn-send img {
+      .footer .btn-send button img {
         width: 25px;
         height: 25px; }
     .footer-caption-block {

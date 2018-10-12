@@ -208,7 +208,7 @@ hr {
   }
 }
 
-.btn-send {
+.btn-send button {
   position: absolute;
   top: 2.5px;
   right: 5px;
@@ -221,9 +221,11 @@ hr {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  &-textarea {
-    top: 10px;
-  }
+
+}
+
+.btn-send-textarea button {
+  top: 10px;
 }
 
 .icon {

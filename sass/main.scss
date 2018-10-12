@@ -152,9 +152,6 @@
 				ul li {
 					width: 250px;
 					&:hover {
-						p {
-							/* display: block; */
-						}
 					}
 					a {
 						width: 220px;
@@ -1376,7 +1373,7 @@
 		}
 
 			
-		.btn-send {
+		.btn-send button{
 			top: 2.5px;
 			right: 5px;
 			img {

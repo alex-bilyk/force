@@ -55,7 +55,55 @@ jQuery(document).ready(function(){
 
 	$(".button").hover(function() {
 		$(this).find("p").slideToggle(600);
-	})
+	});
+
+	// $('.contact-form button').on('click', function(){
+	// 	var email = $('.contact-form input[name="email"]').val();
+	// 	var subject = $('.contact-form input[name="subject"]').val();
+
+	// 	email = email.toLowerCase();                            
+ //        var regMail=/^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$/;
+
+ //        if (!regMail.test(email) || email=='' ){
+	// 			$('.contact-form input[name="email"]').addClass('error');
+ //    		return false;
+ //    	}
+ //    	if (subject.length < 4){
+	// 			$('.contact-form input[name="subject"]').addClass('error');
+ //    		return false;
+	// 		}
+
+	// 		$('#contact_1').on('submit', function(e){
+	// 			e.preventDefault();
+	// 		})
+		
+	// 		formemail = $('.contact-form input[name="email"]').val();
+	// 		formsubject = $('.contact-form input[name="subject"]').val();
+	// 		formmessage = $('.contact-form textarea[name="message"]').val();
+
+ //    	$('.contact-form input[name="email"]').val('');
+ //    	$('.contact-form input[name="subject"]').val('');
+	// 		$('.contact-form textarea[name="message"]').val('');
+			
+	// 		$.ajax({
+	// 			method:"post",
+	// 			url:"/sender.php",
+	// 			data:{
+	// 				email: formemail,
+	// 				subject: formsubject,
+	// 				message: formmessage
+	// 			},
+	// 			success: function(r){
+	// 				console.log(r);
+	// 			}
+	// 		});
+	// });
+	// var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+	// if(pattern.test($(this).val())){
+	// 	$('#valid').text('Верно');
+	// } else {
+	// 	$('#valid').text('Не верно');
+	// }
 
 });	
 /*Finish block mobile_menu*/
