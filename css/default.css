@@ -169,14 +169,22 @@ hr {
   .icon {
     display: none; } }
 
-.btn-clear {
+.btn-send {
   position: absolute;
   top: 2.5px;
   right: 5px;
-  display: none; }
-  .btn-clear img {
-    width: 35px;
-    height: 35px; }
+  position: absolute;
+  right: 6px;
+  bottom: 11px;
+  width: 34px;
+  height: 34px;
+  background: #fb8823 url(../img/icons/arr_white.png) no-repeat center;
+  border: none;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  cursor: pointer; }
+  .btn-send-textarea {
+    top: 10px; }
 
 .icon {
   position: absolute;

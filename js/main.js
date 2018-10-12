@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function(){
 	$('.why_us-slider').slick({
 	    infinite: true,
@@ -47,11 +49,15 @@ $(document).ready(function() {
 		$('.overlay-nav').hide('slow');
 	})
 
-	$(".mine ul li").hover(function() {
-		$(this).find("p").slideToggle(200);
-	})
 });
 
+jQuery(document).ready(function(){
+
+	$(".button").hover(function() {
+		$(this).find("p").slideToggle(600);
+	})
+
+});	
 /*Finish block mobile_menu*/
 
 
