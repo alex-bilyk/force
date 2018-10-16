@@ -374,17 +374,6 @@ hr {
               transition: all 0.3s ease 0s; }
               .header .main-text-list ul li a:hover span {
                 color: #ffffff; }
-          .header .main-text-list ul li .active-button {
-            margin-top: 0;
-            background: #ff9300;
-            color: #fff;
-            -webkit-box-shadow: 0 7px 6px rgba(0, 0, 0, 0.16);
-                    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.16);
-            -webkit-transition: all 0.3s ease 0s;
-            -o-transition: all 0.3s ease 0s;
-            transition: all 0.3s ease 0s; }
-            .header .main-text-list ul li .active-button span {
-              color: #ffffff; }
           .header .main-text-list ul li p {
             font-size: 14px;
             padding: 25px 0;
@@ -524,6 +513,17 @@ hr {
             margin-top: 13px; }
             .header .main-text-list ul li a:hover {
               background-image: none; }
+          .header .main-text-list ul li .active-button {
+            margin-top: 0;
+            background: #ff9300;
+            color: #fff;
+            -webkit-box-shadow: 0 7px 6px rgba(0, 0, 0, 0.16);
+                    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.16);
+            -webkit-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s; }
+            .header .main-text-list ul li .active-button span {
+              color: #ffffff; }
           .header .main-text-list ul li p {
             width: 100%; } }
 

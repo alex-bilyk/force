@@ -173,17 +173,7 @@
 							}
 						}
 					}
-					.active-button {
-						margin-top: 0;
-						background: #ff9300;
-						color: #fff;
-						box-shadow: 0 7px 6px rgba(0, 0, 0, 0.16);
-						transition: all 0.3s ease 0s;
-
-						span {
-							color: $white;
-						}
-					}
+					
 					p {
 						font-size: 14px;
 						padding: 25px 0;
@@ -381,11 +371,7 @@
 
 					ul li {
 						width: 100%;
-						// &.button {
-						// 	&:first-child {
-						// 		background-color: $orange;
-						// 	}
-						// }
+
 						a {
 							margin: 0 auto;	
 							background-image: none;
@@ -393,6 +379,18 @@
 							margin-top: 13px;
 							&:hover {
 								background-image: none;
+							}
+
+						}
+						.active-button {
+							margin-top: 0;
+							background: #ff9300;
+							color: #fff;
+							box-shadow: 0 7px 6px rgba(0, 0, 0, 0.16);
+							transition: all 0.3s ease 0s;
+
+							span {
+								color: $white;
 							}
 						}
 						p {
