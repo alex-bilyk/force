@@ -67,6 +67,9 @@ p {
 img {
   max-width: 100%; }
 
+iframe {
+  border: none; }
+
 @media only screen and (max-width: 575px) {
   .img-big {
     display: none; } }
@@ -220,26 +223,32 @@ hr {
     background-position: 5px 50%;
     padding-left: 20px; }
 
+.textarea {
+  min-height: 50px; }
+
 @media only screen and (max-width: 767px) {
-  .input, .textarea {
+  .input {
     min-height: 30px;
     font-size: 9px; }
-    .input::-webkit-input-placeholder, .textarea::-webkit-input-placeholder {
+    .input::-webkit-input-placeholder {
       color: #BABABA;
       background: #646464 url(../img/icons/arrow-normal-grey.svg) no-repeat;
       -webkit-background-size: 7px 4px;
               background-size: 7px 4px;
       background-position: 5px 50%;
       padding-left: 20px; }
-    .input:-ms-input-placeholder, .textarea:-ms-input-placeholder {
+    .input:-ms-input-placeholder {
       color: #BABABA;
       background: #646464 url(../img/icons/arrow-normal-grey.svg) no-repeat;
       background-size: 7px 4px;
       background-position: 5px 50%;
-      padding-left: 20px; } }
+      padding-left: 20px; }
+  .btn-send button {
+    width: 24px;
+    height: 24px; } }
 
 @media only screen and (min-width: 768px) {
-  .input, .textarea {
+  .input {
     min-height: 40px; } }
 
 .yellow {
@@ -365,6 +374,17 @@ hr {
               transition: all 0.3s ease 0s; }
               .header .main-text-list ul li a:hover span {
                 color: #ffffff; }
+          .header .main-text-list ul li .active-button {
+            margin-top: 0;
+            background: #ff9300;
+            color: #fff;
+            -webkit-box-shadow: 0 7px 6px rgba(0, 0, 0, 0.16);
+                    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.16);
+            -webkit-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s; }
+            .header .main-text-list ul li .active-button span {
+              color: #ffffff; }
           .header .main-text-list ul li p {
             font-size: 14px;
             padding: 25px 0;
@@ -464,8 +484,9 @@ hr {
 
 @media only screen and (max-width: 767px) {
   .header {
-    -webkit-background-size: 120% 600px;
-            background-size: 120% 600px; }
+    background-position: 0 65px;
+    -webkit-background-size: 110% 450px;
+            background-size: 110% 450px; }
     .header-top {
       padding: 10px 0 0px 0; }
       .header-top-logo img {
@@ -497,14 +518,20 @@ hr {
         .header .main-text-list ul li {
           width: 100%; }
           .header .main-text-list ul li a {
-            margin: 0 auto; }
+            margin: 0 auto;
+            background-image: none;
+            border: 1px solid #FF9300;
+            margin-top: 13px; }
+            .header .main-text-list ul li a:hover {
+              background-image: none; }
           .header .main-text-list ul li p {
             width: 100%; } }
 
 @media only screen and (max-width: 575px) {
   .header {
-    -webkit-background-size: 140% 550px;
-            background-size: 140% 550px; } }
+    background-position: -160px 65px;
+    -webkit-background-size: 160% 390px;
+            background-size: 160% 390px; } }
 
 @media only screen and (min-width: 992px) {
   .main-nav, .overlay-nav {

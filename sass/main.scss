@@ -151,8 +151,7 @@
 
 				ul li {
 					width: 250px;
-					&:hover {
-					}
+
 					a {
 						width: 220px;
 						text-decoration: none;
@@ -172,6 +171,17 @@
 							span {
 								color: $white;
 							}
+						}
+					}
+					.active-button {
+						margin-top: 0;
+						background: #ff9300;
+						color: #fff;
+						box-shadow: 0 7px 6px rgba(0, 0, 0, 0.16);
+						transition: all 0.3s ease 0s;
+
+						span {
+							color: $white;
 						}
 					}
 					p {
@@ -316,7 +326,8 @@
 @include sm-down {
 
 	.header {
-		background-size: 120% 600px;
+		background-position: 0 65px;
+		background-size: 110% 450px;
 
 		&-top {
 			padding: 10px 0 0px 0;
@@ -367,10 +378,22 @@
 				}
 
 				&-list {
+
 					ul li {
 						width: 100%;
+						// &.button {
+						// 	&:first-child {
+						// 		background-color: $orange;
+						// 	}
+						// }
 						a {
 							margin: 0 auto;	
+							background-image: none;
+							border: 1px solid  $orange;
+							margin-top: 13px;
+							&:hover {
+								background-image: none;
+							}
 						}
 						p {
 							width: 100%;
@@ -389,7 +412,8 @@
 @include xs-down {
 
 	.header {
-		background-size: 140% 550px;
+		background-position: -160px 65px;
+		background-size: 160% 390px;
 	}
 }
 
