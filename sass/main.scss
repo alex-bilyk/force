@@ -833,10 +833,18 @@
 @include xs-down {
 	.mix_match {
 
+		img.bg-mix_match-img {
+			right: 0;
+			height: 360px;
+			max-width: 145%;
+			width: 710px;
+		}
+
 		&-desc {
+			padding-top: 100px;
 			img {
-				top: -75%;
-				right: 23%;
+				top: -70%;
+				right: 14%;
 			}
 		}
 	}

@@ -815,9 +815,16 @@ hr {
         padding: 9px 30px; } }
 
 @media only screen and (max-width: 575px) {
-  .mix_match-desc img {
-    top: -75%;
-    right: 23%; } }
+  .mix_match img.bg-mix_match-img {
+    right: 0;
+    height: 360px;
+    max-width: 145%;
+    width: 710px; }
+  .mix_match-desc {
+    padding-top: 100px; }
+    .mix_match-desc img {
+      top: -70%;
+      right: 14%; } }
 
 @media only screen and (max-width: 420px) {
   .mix_match-desc img {
