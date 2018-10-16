@@ -417,6 +417,19 @@
 	}
 }
 
+@media (min-width: 992px) and (max-width: 1070px) {
+	.header {
+		&-top {
+			&-menu {
+				nav ul {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+}
+
 @include md-up {
 	.main-nav, .overlay-nav {
 		display: none;
