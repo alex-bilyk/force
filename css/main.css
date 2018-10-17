@@ -593,7 +593,11 @@ hr {
           -ms-flex-align: center;
               align-items: center;
       text-align: center;
-      padding: 10px 15px; }
+      padding: 10px 15px;
+      -webkit-box-align: stretch;
+      -webkit-align-items: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
       .why_us-box-text-head {
         padding: 0 15px; }
         .why_us-box-text-head span {
