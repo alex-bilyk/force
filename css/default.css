@@ -152,11 +152,11 @@ hr {
       -o-transition: .4s;
       transition: .4s;
       color: #FF9300; }
-  .btn-download {
+  .btn-crystalline {
     background-color: transparent;
     font-weight: 300;
     color: #FF9300; }
-    .btn-download > .icon {
+    .btn-crystalline > .icon {
       color: #FF9300;
       -webkit-transform: rotate(90deg);
           -ms-transform: rotate(90deg);

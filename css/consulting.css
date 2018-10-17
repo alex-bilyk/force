@@ -1,4 +1,5 @@
 /* Additional files */
+/* Additional files */
 /* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
@@ -153,11 +154,11 @@ hr {
       -o-transition: .4s;
       transition: .4s;
       color: #FF9300; }
-  .btn-download {
+  .btn-crystalline {
     background-color: transparent;
     font-weight: 300;
     color: #FF9300; }
-    .btn-download > .icon {
+    .btn-crystalline > .icon {
       color: #FF9300;
       -webkit-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
@@ -1284,5 +1285,31 @@ div.cs-select:focus {
 
 /* Finish adaptive block for cs-select */
 /* Finish styles from the file cs-select */
+/* Start section Header */
 .header {
   background: none; }
+
+/* Finish section Header */
+/* Start section Programs */
+.programs {
+  padding: 150px 0 250px 0; }
+  .programs-map img {
+    min-height: 250px; }
+  .programs-desc h3 {
+    line-height: 50px; }
+  .programs-desc p {
+    font-size: 20px;
+    line-height: 26px; }
+  .programs-desc-buttons {
+    margin-top: 20px; }
+    .programs-desc-buttons .btn-programs {
+      margin-top: 15px;
+      padding: 8px 15px; }
+    .programs-desc-buttons a:first-child {
+      margin-right: 24px; }
+    .programs-desc-buttons a.btn-crystalline .icon {
+      -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+              transform: rotate(0deg); }
+
+/* Finish section Programs */

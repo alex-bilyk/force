@@ -1,5 +1,51 @@
+/* Additional files */
 @import 'main.scss';
+
+/* Start section Header */
 
 .header {
 	background: none;
 }
+
+/* Finish section Header */
+
+
+
+/* Start section Programs */
+
+.programs {
+	padding: 150px 0 250px 0;
+
+	&-map {
+		img {
+			min-height: 250px;
+		}
+	}
+
+	&-desc {
+		h3 {
+			line-height: 50px;
+		}
+		p {
+			font-size: 20px;
+			line-height: 26px;
+		}
+		&-buttons {
+			margin-top: 20px;
+			.btn-programs {
+				margin-top: 15px;
+				padding: 8px 15px;
+			}
+			a:first-child {
+				margin-right: 24px;
+			}
+			a.btn-crystalline {
+				.icon {
+					transform: rotate(0deg);
+				}
+			}
+		}
+	}
+}
+
+/* Finish section Programs */
