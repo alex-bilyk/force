@@ -1,6 +1,11 @@
 "use strict";
 
+
 $(document).ready(function(){
+	/*Start settings for sliders*/
+
+	/*Start settings for slider in the section Why_us*/
+
 	$('.why_us-slider').slick({
 	    infinite: true,
 	    slidesToShow: 4,
@@ -37,6 +42,10 @@ $(document).ready(function(){
 	  	]
 	});
 
+	/*Start settings for slider in the section Why_us*/
+
+	/*Finish settings for sliders*/
+	
 	/*Start block mobile_menu*/
 
 	var $nav = $('a.main-nav-bar');
@@ -48,6 +57,8 @@ $(document).ready(function(){
 	})
 
 	/*Finish block mobile_menu*/
+
+	/*Start settings for hover effect in the Main section*/
 
 	$(".button").hover(function() {
 		$(this).find("p")
@@ -62,15 +73,16 @@ $(document).ready(function(){
         });
 	});
 
+	/*Finish settings for hover effect in the Main section*/
 
-
-
-/*select*/
+	/* Start settings for select*/
 
 	(function() {
 		[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
 			new SelectFx(el);
 		} );
 	})();
+
+	/* Finish settings for select*/
 
 });

@@ -262,7 +262,16 @@ hr {
   color: #646464;
   font-weight: 700; }
 
-/* List section for site*/
+/* List section for site
+1. Header
+2. Main
+3. Why_us
+4. Our_goals
+5. Mix_match
+6. Multibrand
+7. Footer
+8. Settings for select
+*/
 .fixed {
   position: fixed;
   -webkit-transition: all 0.3s ease 0s;
