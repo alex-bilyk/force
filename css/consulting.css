@@ -62,9 +62,6 @@ h4 {
   font-size: 20px;
   color: #ffffff; }
 
-p {
-  color: #969696; }
-
 img {
   max-width: 100%; }
 
@@ -261,6 +258,26 @@ hr {
 .bold-dark {
   color: #646464;
   font-weight: 700; }
+
+/* New styles */
+.inside {
+  width: 1394px;
+  margin: 0 auto; }
+
+.under {
+  width: 100%;
+  text-align: center;
+  font: 200px/1 "Montserrat";
+  letter-spacing: -6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: -1;
+  top: -20%;
+  color: #fff; }
+  .under p {
+    font-size: 100%;
+    color: #F7F7F7; }
 
 /* List section for site
 1. Header
@@ -1299,6 +1316,11 @@ div.cs-select:focus {
   background: none; }
 
 /* Finish section Header */
+/* Start section Process */
+.process__inner {
+  position: relative; }
+
+/* Fnish section Process */
 /* Start section Programs */
 .programs {
   padding: 150px 0 250px 0; }

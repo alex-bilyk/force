@@ -9,6 +9,7 @@
 
 /* Base colors */
 $white: #ffffff;
+$dark-white: #F7F7F7;
 $black: #000000;
 $dark-black: #292828;
 $grey: #8B8B9C;
@@ -91,7 +92,7 @@ h4 {
 }
 
 p {
-  color: $light-grey;
+  // color: $light-grey;
 }
 
 img {
@@ -314,4 +315,28 @@ hr {
 .bold-dark {
   color: $dark-grey;
   font-weight: 700;
+}
+
+/* New styles */
+
+.inside {
+  width: 1394px;
+  margin: 0 auto;
+}
+
+.under {
+  width: 100%;
+  text-align: center;
+  font: 200px/1 "Montserrat";
+  letter-spacing: -6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: -1;
+  top: -20%;
+  color: #fff;
+  p {
+    font-size: 100%;
+    color: $dark-white;
+  }
 }
