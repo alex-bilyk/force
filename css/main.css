@@ -260,8 +260,29 @@ hr {
 
 /* New styles */
 .inside {
-  width: 1394px;
+  max-width: 1394px;
   margin: 0 auto; }
+
+@media only screen and (max-width: 1394px) {
+  .inside {
+    max-width: 1140px; } }
+
+@media only screen and (max-width: 1199px) {
+  .inside {
+    max-width: 960px; } }
+
+@media only screen and (max-width: 991px) {
+  .inside {
+    max-width: 720px; } }
+
+@media only screen and (max-width: 767px) {
+  .inside {
+    max-width: 540px; } }
+
+@media only screen and (max-width: 575px) {
+  .inside {
+    max-width: 100%;
+    padding: 0 15px; } }
 
 .under {
   width: 100%;

@@ -3,13 +3,21 @@ $screen-xs-down: 575px;
 $screen-sm-down: 767px;
 $screen-md-down: 991px;
 $screen-lg-down: 1199px;
+$screen-xl-down: 1394px;
 
 $screen-xs-up: 576px;
 $screen-sm-up: 768px;
 $screen-md-up: 992px;
 $screen-lg-up: 1200px;
+$screen-xl-up: 1394px;
 
 // Desktop First
+@mixin xl-down {
+  @media only screen and (max-width: $screen-xl-down) {
+    @content
+  }
+}
+
 @mixin lg-down {
   @media only screen and (max-width: $screen-lg-down) {
     @content
@@ -61,6 +69,12 @@ $screen-lg-up: 1200px;
 
 @mixin lg-up {
   @media only screen and (min-width: $screen-lg-up) {
+    @content
+  }
+}
+
+@mixin xl-up {
+  @media only screen and (min-width: $screen-xl-up) {
     @content
   }
 }

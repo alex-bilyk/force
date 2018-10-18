@@ -320,8 +320,39 @@ hr {
 /* New styles */
 
 .inside {
-  width: 1394px;
+  max-width: 1394px;
   margin: 0 auto;
+}
+
+@include xl-down {
+  .inside {
+    max-width: 1140px;
+  }
+}
+
+@include lg-down {
+  .inside {
+    max-width: 960px;
+  }
+}
+
+@include md-down {
+  .inside {
+    max-width: 720px;
+  }
+}
+
+@include sm-down {
+  .inside {
+    max-width: 540px;
+  }
+}
+
+@include xs-down {
+  .inside {
+    max-width: 100%;
+    padding: 0 15px;
+  }
 }
 
 .under {

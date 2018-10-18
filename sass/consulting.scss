@@ -20,8 +20,16 @@
 		position: relative;
 	}
 
+	&__images-wrapper {
+		position: absolute;
+		right: 0;
+		z-index: 1;
+	}
+
 	&__content {
-		max-width: 772px;
+		position: relative;
+		width: 60%;
+		z-index: 2;
 		
 		h3 {
 			font-size: 80px;
@@ -38,10 +46,6 @@
 		}
 	}
 
-	&__images-wrapper {
-		position: absolute;
-		right: 0;
-	}
 
 	&__button-wrapper {
 		.btn-consulting {
@@ -50,6 +54,75 @@
 		}
 	}
 }
+
+/* Start Adaptive block */
+
+@include xl-down {
+
+	.consulting {
+		&__images-wrapper {
+			img {
+				max-width: 400px;
+			}
+		}
+	}
+	
+}
+
+@include md-down {
+
+	.consulting {
+
+		&__images-wrapper {
+			img {
+				max-width: 320px;
+			}
+		}
+
+		&__content {
+
+			h3 {
+				font-size: 50px;
+				line-height: 50px;
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+	
+}
+
+@include sm-down {
+
+	.consulting {
+		padding-top: 50px;
+		
+		&__inner {
+			text-align: center;
+		}
+		&__images-wrapper {
+			position: static;
+		}
+
+		&__content {
+			width: 100%;
+
+			h3 {
+				font-size: 35px;
+				line-height: 40px;
+			}
+			p {
+				font-size: 16px;
+				margin-bottom: 15px;
+			}
+		}
+
+	}
+	
+}
+
+/* Finish Adaptive block */
 
 /* Finish section Consulting */
 
