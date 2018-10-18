@@ -18,8 +18,37 @@
 		position: relative;
 	}
 
-	.under {
+	&__slider {
 
+		&-box {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			max-width: 240px;
+			font-family: 'Montserrat' ,sans-serif;
+		}
+	
+		&-img {
+			margin-bottom: 35px;
+			img {
+				height: 110px;
+			}
+		}
+
+		&-text {
+			&-head {
+				span {
+					font-weight: 600;
+				}
+			}
+			&-body {
+				margin-top: 15px;
+				p {
+					line-height: 24px;
+				}
+
+			}
+		}
 	}
 
 

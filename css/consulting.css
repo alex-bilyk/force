@@ -273,8 +273,7 @@ hr {
   text-transform: uppercase;
   position: absolute;
   z-index: -1;
-  top: -20%;
-  color: #fff; }
+  top: -29%; }
   .under p {
     font-size: 100%;
     color: #F7F7F7; }
@@ -1319,6 +1318,32 @@ div.cs-select:focus {
 /* Start section Process */
 .process__inner {
   position: relative; }
+
+.process__slider-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  max-width: 240px;
+  font-family: 'Montserrat' ,sans-serif; }
+
+.process__slider-img {
+  margin-bottom: 35px; }
+  .process__slider-img img {
+    height: 110px; }
+
+.process__slider-text-head span {
+  font-weight: 600; }
+
+.process__slider-text-body {
+  margin-top: 15px; }
+  .process__slider-text-body p {
+    line-height: 24px; }
 
 /* Fnish section Process */
 /* Start section Programs */
