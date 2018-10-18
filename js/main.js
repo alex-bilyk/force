@@ -51,8 +51,8 @@ $(document).ready(function(){
 	    slidesToShow: 5,
 	    slidesToScroll: 2,
 	    arrows: true,
-	    prevArrow: '<i class="fa why_us-slider-arrows arrow-left fa-chevron-left"></i>',
-	    nextArrow: '<i class="fa why_us-slider-arrows arrow-right fa-chevron-right"></i>',
+	    prevArrow: '<i class="fa slider-arrows arrow-left fa-chevron-left"></i>',
+	    nextArrow: '<i class="fa slider-arrows arrow-right fa-chevron-right"></i>',
 	    dots: false,
 	    responsive: [
 	    {
