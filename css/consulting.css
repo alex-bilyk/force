@@ -1315,35 +1315,58 @@ div.cs-select:focus {
   background: none; }
 
 /* Finish section Header */
+/* Start section Consulting */
+.consulting {
+  padding-bottom: 170px; }
+  .consulting__inner {
+    position: relative; }
+  .consulting__content {
+    max-width: 772px; }
+    .consulting__content h3 {
+      font-size: 80px;
+      line-height: 75px;
+      margin-bottom: 25px; }
+    .consulting__content p {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 45px; }
+    .consulting__content .read_more {
+      color: #FF9300; }
+  .consulting__images-wrapper {
+    position: absolute;
+    right: 0; }
+  .consulting__button-wrapper .btn-consulting {
+    width: 269px;
+    padding: 10px 15px; }
+
+/* Finish section Consulting */
 /* Start section Process */
-.process__inner {
-  position: relative; }
-
-.process__slider-box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  max-width: 240px;
-  font-family: 'Montserrat' ,sans-serif; }
-
-.process__slider-img {
-  margin-bottom: 35px; }
-  .process__slider-img img {
-    height: 110px; }
-
-.process__slider-text-head span {
-  font-weight: 600; }
-
-.process__slider-text-body {
-  margin-top: 15px; }
-  .process__slider-text-body p {
-    line-height: 24px; }
+.process {
+  padding-top: 100px; }
+  .process__inner {
+    position: relative; }
+  .process__slider-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    max-width: 240px;
+    font-family: 'Montserrat' ,sans-serif; }
+  .process__slider-img {
+    margin-bottom: 35px; }
+    .process__slider-img img {
+      height: 110px; }
+  .process__slider-text-head span {
+    font-weight: 600; }
+  .process__slider-text-body {
+    margin-top: 15px; }
+    .process__slider-text-body p {
+      line-height: 24px; }
 
 /* Fnish section Process */
 /* Start section Programs */
