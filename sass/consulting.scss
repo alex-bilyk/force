@@ -75,7 +75,7 @@
 
 		&__images-wrapper {
 			img {
-				max-width: 320px;
+				width: 320px;
 			}
 		}
 
@@ -103,6 +103,9 @@
 		}
 		&__images-wrapper {
 			position: static;
+			img {
+				width: 280px;
+			}
 		}
 
 		&__content {
@@ -219,6 +222,7 @@
 
 @include sm-down {
 	.process {
+		padding-top: 0;
 
 		&__slider {
 
@@ -237,6 +241,29 @@
 }
 
 @include xs-down {
+	.process {
+
+		&__slider {
+
+			&-box {
+				max-width: 280px;
+			}
+
+			&-arrow {
+
+				&-left {
+					left: 0px;
+				}
+
+				&-right {
+					right: 0px;
+				}
+			}
+		}
+	}
+}
+
+@include es-down {
 	.process {
 
 		&__slider {
@@ -299,5 +326,49 @@
 		}
 	}
 }
+
+/* Start Adaptive block */
+
+@include sm-down {
+	.programs {
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 300px;
+
+		&-desc {
+			&-buttons {
+				a:first-child {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
+
+@include xs-down {
+	.programs {
+		text-align: center;
+
+		&-desc {
+
+			h3 {
+				font-size: 35px;
+				line-height: 40px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+
+			&-buttons {
+				a:first-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+/* Finish Adaptive block */
 
 /* Finish section Programs */

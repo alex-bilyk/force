@@ -1448,7 +1448,7 @@ div.cs-select:focus {
 
 @media only screen and (max-width: 991px) {
   .consulting__images-wrapper img {
-    max-width: 320px; }
+    width: 320px; }
   .consulting__content h3 {
     font-size: 50px;
     line-height: 50px; }
@@ -1462,6 +1462,8 @@ div.cs-select:focus {
       text-align: center; }
     .consulting__images-wrapper {
       position: static; }
+      .consulting__images-wrapper img {
+        width: 280px; }
     .consulting__content {
       width: 100%; }
       .consulting__content h3 {
@@ -1526,12 +1528,22 @@ div.cs-select:focus {
     right: -10px; } }
 
 @media only screen and (max-width: 767px) {
-  .process__slider-arrow-left {
-    left: -5px; }
-  .process__slider-arrow-right {
-    right: -5px; } }
+  .process {
+    padding-top: 0; }
+    .process__slider-arrow-left {
+      left: -5px; }
+    .process__slider-arrow-right {
+      right: -5px; } }
 
 @media only screen and (max-width: 575px) {
+  .process__slider-box {
+    max-width: 280px; }
+  .process__slider-arrow-left {
+    left: 0px; }
+  .process__slider-arrow-right {
+    right: 0px; } }
+
+@media only screen and (max-width: 480px) {
   .process__slider-box {
     max-width: 260px; }
   .process__slider-arrow-left {
@@ -1562,4 +1574,25 @@ div.cs-select:focus {
           -ms-transform: rotate(0deg);
               transform: rotate(0deg); }
 
+/* Start Adaptive block */
+@media only screen and (max-width: 767px) {
+  .programs {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 300px; }
+    .programs-desc-buttons a:first-child {
+      margin-right: 10px; } }
+
+@media only screen and (max-width: 575px) {
+  .programs {
+    text-align: center; }
+    .programs-desc h3 {
+      font-size: 35px;
+      line-height: 40px; }
+    .programs-desc p {
+      font-size: 16px; }
+    .programs-desc-buttons a:first-child {
+      margin-right: 0; } }
+
+/* Finish Adaptive block */
 /* Finish section Programs */
