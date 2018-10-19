@@ -428,3 +428,36 @@ left: -10px;
     color: $dark-white;
   }
 }
+
+@include lg-down {
+  .under {
+    font-size: 180px;
+  }
+}
+
+@include md-down {
+  .under {
+    font-size: 140px;
+    top: -20%;
+  }
+}
+
+@include sm-down {
+  .under {
+    font-size: 110px;
+    top: -10%;
+  }
+}
+
+@include xs-down {
+  .under {
+    font-size: 90px;
+    top: -10%;
+  }
+}
+
+@include es-down {
+  .under {
+    display: none;
+  }
+}

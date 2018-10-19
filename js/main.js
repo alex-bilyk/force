@@ -51,8 +51,8 @@ $(document).ready(function(){
 	    slidesToShow: 5,
 	    slidesToScroll: 2,
 	    arrows: true,
-	    prevArrow: '<i class="fa slider-arrows arrow-left fa-chevron-left"></i>',
-	    nextArrow: '<i class="fa slider-arrows arrow-right fa-chevron-right"></i>',
+	    prevArrow: '<i class="fa slider-arrows arrow-left process__slider-arrow-left fa-chevron-left"></i>',
+	    nextArrow: '<i class="fa slider-arrows arrow-right process__slider-arrow-right fa-chevron-right"></i>',
 	    dots: false,
 	    responsive: [
 	    {
@@ -77,7 +77,7 @@ $(document).ready(function(){
 	      }
 	    },
 	    {
-	      breakpoint: 480,
+	      breakpoint: 575,
 	      settings: {
 	        slidesToShow: 1,
 	        slidesToScroll: 1

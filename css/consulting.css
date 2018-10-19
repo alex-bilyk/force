@@ -354,6 +354,29 @@ hr {
     font-size: 100%;
     color: #F7F7F7; }
 
+@media only screen and (max-width: 1199px) {
+  .under {
+    font-size: 180px; } }
+
+@media only screen and (max-width: 991px) {
+  .under {
+    font-size: 140px;
+    top: -20%; } }
+
+@media only screen and (max-width: 767px) {
+  .under {
+    font-size: 110px;
+    top: -10%; } }
+
+@media only screen and (max-width: 575px) {
+  .under {
+    font-size: 90px;
+    top: -10%; } }
+
+@media only screen and (max-width: 480px) {
+  .under {
+    display: none; } }
+
 /* List section for site
 1. Header
 2. Main
@@ -1455,6 +1478,17 @@ div.cs-select:focus {
   padding-top: 100px; }
   .process__inner {
     position: relative; }
+  .process__slider-item {
+    padding: 0 15px; }
+    .process__slider-item-wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
   .process__slider-box {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1464,9 +1498,10 @@ div.cs-select:focus {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 220px;
     text-align: center;
-    max-width: 240px;
-    font-family: 'Montserrat' ,sans-serif; }
+    font-family: 'Montserrat' ,sans-serif;
+    padding: 0 10px; }
   .process__slider-img {
     margin-bottom: 35px; }
     .process__slider-img img {
@@ -1477,6 +1512,32 @@ div.cs-select:focus {
     margin-top: 15px; }
     .process__slider-text-body p {
       line-height: 24px; }
+
+@media only screen and (max-width: 1199px) {
+  .process__slider-arrow-left {
+    left: -15px; }
+  .process__slider-arrow-right {
+    right: -15px; } }
+
+@media only screen and (max-width: 991px) {
+  .process__slider-arrow-left {
+    left: -10px; }
+  .process__slider-arrow-right {
+    right: -10px; } }
+
+@media only screen and (max-width: 767px) {
+  .process__slider-arrow-left {
+    left: -5px; }
+  .process__slider-arrow-right {
+    right: -5px; } }
+
+@media only screen and (max-width: 575px) {
+  .process__slider-box {
+    max-width: 260px; }
+  .process__slider-arrow-left {
+    left: -10px; }
+  .process__slider-arrow-right {
+    right: -10px; } }
 
 /* Fnish section Process */
 /* Start section Programs */

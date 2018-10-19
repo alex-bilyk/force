@@ -351,3 +351,26 @@ hr {
   .under p {
     font-size: 100%;
     color: #F7F7F7; }
+
+@media only screen and (max-width: 1199px) {
+  .under {
+    font-size: 180px; } }
+
+@media only screen and (max-width: 991px) {
+  .under {
+    font-size: 140px;
+    top: -20%; } }
+
+@media only screen and (max-width: 767px) {
+  .under {
+    font-size: 110px;
+    top: -10%; } }
+
+@media only screen and (max-width: 575px) {
+  .under {
+    font-size: 90px;
+    top: -10%; } }
+
+@media only screen and (max-width: 480px) {
+  .under {
+    display: none; } }
