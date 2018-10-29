@@ -1,0 +1,216 @@
+extends template/base
+
+block title
+	| Consulting
+
+block content
+
+	// Start section Consulting
+	section#consulting.consulting
+		.consulting__inner.inside
+			.consulting__images-wrapper
+				img(src='img/consulting/T-shirt.png', alt='T-shirt')
+			.consulting__content
+				h3 CONSULTING & DEVELOPMENT
+				p
+					| A nossa Experiência de mais de 30 anos na produção e desenvolvimento de Vestuário
+					| de Trabalho Técnico de Proteção e Uniformes, permite-nos prestar aos nossos clientes
+					| um serviço de consultoria especializada, que antecede todo o processo de compra,
+					| num diagnóstico de necessidades e avaliação do produto e serviço que cada cliente
+					| necessita. 
+					a.read_more(href='#') Read more…
+				.consulting__button-wrapper
+					a.btn.btn-consulting(href='#')
+						| Contact our Technical Suport
+						svg.icon
+							use(xlink:href='#arrow-right')
+	// Finish section Consulting
+
+
+	// Start section Process
+	section#process.process
+		// /inside
+		.process__inner.inside
+			.under
+				p process
+			// Start block process__slider
+			.process__slider
+				// Start block why_us-slider-item
+				.process__slider-item
+					.process__slider-item-wrap
+						.process__slider-box
+							.process__slider-img
+								img(src='img/process/first-thumb.png', alt='Expertise & Consulting')
+							.process__slider-text
+								.process__slider-text-head
+									span Expertise & Consulting
+								.process__slider-text-body
+									p
+										| Fazemos o levantamento das necessidades de cada empresa e adequamos o produto e serviço individualmente
+				// Finish block why_us-slider-item
+				// Start block why_us-slider-item
+				.process__slider-item
+					.process__slider-item-wrap
+						.process__slider-box
+							.process__slider-img
+								img(src='img/process/second-thumb.png', alt='Product Selection')
+							.process__slider-text
+								.process__slider-text-head
+									span Product Selection
+								.process__slider-text-body
+									p
+										| Selecionamos a melhor solução entre produto standard ou de produção
+				// Finish block why_us-slider-item
+				// Start block why_us-slider-item
+				.process__slider-item
+					.process__slider-item-wrap
+						.process__slider-box
+							.process__slider-img
+								img(src='img/process/third-thumb.png', alt='Design')
+							.process__slider-text
+								.process__slider-text-head
+									span Design
+								.process__slider-text-body
+									p
+										| Temos designers internas e um configurador online para desenvolvimento de imagens exclusivas
+				// Finish block why_us-slider-item
+				// Start block why_us-slider-item
+				.process__slider-item
+					.process__slider-item-wrap
+						.process__slider-box
+							.process__slider-img
+								img(src='img/process/fourth-thumb.png', alt='Materials Selection')
+							.process__slider-text
+								.process__slider-text-head
+									span Materials Selection
+								.process__slider-text-body
+									p
+										| Conhecemos e aconselhamos os melhores materiais de produção
+				// Finish block why_us-slider-item
+				// Start block why_us-slider-item
+				.process__slider-item
+					.process__slider-item-wrap
+						.process__slider-box
+							.process__slider-img
+								img(src='img/process/fifth-thumb.png', alt='Own Production')
+							.process__slider-text
+								.process__slider-text-head
+									span Own Production
+								.process__slider-text-body
+									p temos produção própria em Portugal
+				// Finish block why_us-slider-item
+				// Start block why_us-slider-item
+				.process__slider-item
+					.process__slider-item-wrap
+						.process__slider-box
+							.process__slider-img
+								img(src='img/process/second-thumb.png', alt='Expertise & Consulting')
+							.process__slider-text
+								.process__slider-text-head
+									span Product Selection
+								.process__slider-text-body
+									p
+										| Selecionamos a melhor solução entre produto standard ou de produção
+				// Finish block why_us-slider-item
+				// Start block why_us-slider-item
+				.process__slider-item
+					.process__slider-item-wrap
+						.process__slider-box
+							.process__slider-img
+								img(src='img/process/first-thumb.png', alt='Expertise & Consulting')
+							.process__slider-text
+								.process__slider-text-head
+									span Expertise & Consulting
+								.process__slider-text-body
+									p
+										| Fazemos o levantamento das necessidades de cada empresa e adequamos o produto e serviço individualmente
+				// Finish block why_us-slider-item
+				// Finish block process__slider
+				// /inside
+	// Finish section Process
+
+
+
+	// Start section Programs
+	section#programs.programs
+		.container
+			.row
+				// Start block Programs-map
+				.col-12.col-md-6
+					.programs-map
+						img(src='img/programs/blue-map.png', alt='map')
+				// Finish block Programs-map
+				// Start block Programs-desc
+				.col-12.col-md-6
+					.programs-desc
+						h3
+							| Stock 
+							br
+							|  and Logistics 
+							br
+							|  programs
+						p
+							| Dedicated stock Programs. Software support for purchasement and logistics management. Segmented packaging and delivery.
+						.programs-desc-buttons
+							a.btn.btn-programs(href='#')
+								| Know More
+								svg.icon
+									use(xlink:href='#arrow-right')
+							a.btn.btn-programs.btn-crystalline(href='#')
+								| Contact Us
+								svg.icon
+									use(xlink:href='#arrow-right')
+				// Finish block Programs-desc
+	// Finish section Programs
+
+
+
+	// Start section Mix_match
+	section#mix_match.mix_match
+		.container
+			.row
+				img.bg-mix_match-img(src='img/mix_match/bg-mix_match-img.png', alt='mix_match-site')
+				.col-12.mix_match-desc
+					.content
+						h3
+							| DESIGN 
+							br
+							|  YOUR OWN 
+							br
+							|  WORKWEAR
+						p
+							span.orange Online Configurator -
+							|   Mix & Match allows each user to draw an unique multinorms certified garment by combining a large number of choices of materials, shapes, details and colors, for productions of 100 pieces.
+						a.btn.btn-mix_match(href='#')
+							| TEST DYG
+							svg.icon
+								use(xlink:href='#arrow-right')
+	// Finish section Mix_match
+
+
+
+	// Start section Multibrand
+	section#multibrand.multibrand
+		.container
+			.row
+				img.img-big(src='img/multibrand/bg-multibrand-text.png', alt='multibrand')
+				img.img-small(src='img/multibrand/bg-multibrand-text-resp.png', alt='multibrand')
+				.multibrand-book
+					img(src='img/multibrand/multibrand-book.png', alt='book')
+				.col-12.multibrand-desc
+					.multibrand-desc-text
+						h3
+							| COMPLEMENTARY 
+							br
+							|  MULTIBRAND DISTRIBUTION
+						p
+							| We join the world’s largest producers of Workwear and Protective Equipment. We are official distributors of more than 200 brands and we provide an offer of more than 30.000 product references. We equip from head to toe!
+						a.btn.btn-multibrand(href='#')
+							| Know More
+							svg.icon
+								use(xlink:href='#arrow-right')
+						a.btn.btn-multibrand.btn-crystalline(href='#', download='')
+							| Download Brochure
+							svg.icon
+								use(xlink:href='#arrow-right')
+	// Finish section Multibrand

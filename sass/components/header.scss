@@ -1,0 +1,393 @@
+/* Start section Header */
+
+.header {
+
+	/* Start block Header-top and Header-bottom */
+
+	&-top {
+		padding: 24px 0 11px 0;
+
+		&-logo {
+			img {
+				width: 205px;
+				height: 32px;
+			}
+		}
+
+		&-menu {
+			.nav {
+				li {
+					a {
+						padding-left: 25px;
+					}
+				}
+			}
+		}
+
+	}
+
+	&-bottom {
+		padding-top: 15px;
+
+		&-text {
+			&_2 {
+				display: none;
+			}
+			span {
+				font-size: 14px;
+				color: $orange;
+			}
+		}
+
+		&-submenu {
+			.nav {
+				li {
+					a {
+						padding-left: 25px;
+					}
+				}
+			}
+		}
+
+	}
+
+
+	/* Finish block Header-top and Header-bottom */
+
+	/* Start block mobile_menu */
+
+	 .main-nav-bar {
+	    width: 40px;
+	    height: 40px;
+	    position: relative;
+		float: right;
+	}
+
+	.line {
+	  width: 30px;
+	  height: 4px;
+	  background-color: $black;
+	  display: block;
+	  position: absolute;
+	  right: 0;
+	  top: 50%;
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -ms-border-radius: 5px;
+	  -o-border-radius: 5px;
+	  border-radius: 5px;
+	  -webkit-transform: translateY(-2px);
+	  -ms-transform: translateY(-2px);
+	  -o-transform: translateY(-2px);
+	  transform: translateY(-2px);
+	  -webkit-transition: transform 0.2s;
+	  -o-transition: transform 0.2s;
+	  transition: transform 0.2s;
+	    &:before, &:after {
+	      -webkit-transition: all 0.2s;
+	      -o-transition: all 0.2s;
+	      transition: all 0.2s;
+	      background-color: $black;
+	      display: inline-block;
+	      content: '';
+	      width: 30px;
+	      height: 4px;
+	      position: absolute;
+	      top: 50%;
+	      right: 0;
+	      -webkit-border-radius: 5px;
+	      -moz-border-radius: 5px;
+	      -ms-border-radius: 5px;
+	      -o-border-radius: 5px;
+	      border-radius: 5px;
+	    }
+	    &:before {
+	      -webkit-transform: translateY(-8px);
+	      -ms-transform: translateY(-8px);
+	      -o-transform: translateY(-8px);
+	      transform: translateY(-8px); 
+	    }
+	    &:after {
+	      -webkit-transform: translateY(4px);
+	      -ms-transform: translateY(4px);
+	      -o-transform: translateY(4px);
+	      transform: translateY(4px);
+	    }
+	}
+
+	.overlay-nav {
+	  display: none;
+	  position: fixed;
+	  width: 100%;
+	  height: 100vh;
+	  overflow-y: scroll;
+	  z-index: 99;
+	  left: 0;
+	  top: 0;
+	  background-color: rgba(0,0,0,.8);
+	  ul {
+	    padding-top: 15%;
+	    line-height: 2.5;
+	    text-align: center;
+	    list-style: none;
+	    li a {
+	      transition: all 0.2s;
+	      &:hover {
+	        text-decoration: none;
+	        color: $orange;
+	      }
+	      color: #fff;
+	      font-size: 20px;
+	      font-weight: 500;
+	    }
+	  }
+	}
+	.close-nav {
+	  position: fixed;
+	  font-size: 50px;
+	  top: 3%;
+	  right: 5%;
+	  color: $white;
+	  &:hover {
+	    cursor: pointer;
+	  }
+	}
+
+	/* Finish block mobile_menu */
+
+}
+
+/* Strat Adaptive for Header */
+
+@include md-down {
+	.header {
+		background-size: 130% 850px;
+		
+		&-top {
+			&-menu, &-lang {
+				display: none;
+			}
+		}
+	}
+}
+
+@include sm-down {
+	.header {
+		background-position: 0 65px;
+		background-size: 110% 450px;
+
+		&-top {
+			padding: 10px 0 0px 0;
+
+			&-logo {
+				img {
+					width: 112px;
+					height: 18px;
+				}
+			}
+			&-menu, &-lang {
+				display: none;
+			}
+		}
+
+		&-bottom {
+			&-text {
+				&_1 {
+					display: none;
+				}
+				&_2 {
+					display: block;
+					position: relative;
+					top: -10px;
+				}
+				span {
+					font-size: 9px;
+				}
+			}
+			&-submenu {
+				display: none;
+			}
+		}
+	}
+}
+
+@include xs-down {
+
+	.header {
+		background-position: -160px 65px;
+		background-size: 160% 390px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1070px) {
+	.header {
+		&-top {
+			&-menu {
+				nav ul {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+}
+
+@include md-up {
+	.main-nav, .overlay-nav {
+		display: none;
+	} 
+}
+
+/* Strat Adaptive for Header */
+
+/* Finish section Header */
+
+/* Start styles from the file cs-skin-border */
+
+.cs-select > span::after, .cs-select .cs-selected span::after {
+	content: '';
+	padding: 10px;
+	background: url(../img/icons/arrow-black.svg) no-repeat;
+	-webkit-background-size: 6px 10px;
+	background-size: 6px 10px;
+	background-position: 0px -6px;
+	transform: rotate(90deg);
+	background: url(../img/icons/arrow-black.svg) no-repeat;
+    -webkit-background-size: 6px 10px;
+    background-size: 6px 10px;
+    top: 45%;
+    left: 60%;
+
+}
+
+div.cs-skin-border {
+	background: transparent;
+}
+
+.cs-skin-border > span {
+	color: $brown;
+	&:hover {
+		color: $orange;
+	}
+}
+
+.cs-skin-border.cs-active > span {
+	color: orange;
+}
+
+.cs-skin-border .cs-options {
+	opacity: 0;
+}
+
+.cs-skin-border .cs-options span:hover {
+	color: $orange;
+}
+
+.cs-skin-border.cs-active .cs-options {
+	opacity: 1;
+}
+
+/* Finish styles from the file cs-skin-border */
+
+/* Start styles from the file cs-select */
+
+/* Default custom select styles */
+div.cs-select {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	text-align: center;
+	z-index: 100;
+	width: 100%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+div.cs-select:focus {
+	outline: none; /* For better accessibility add a style for this in your skin */
+}
+
+.cs-select select {
+	display: none;
+}
+
+.cs-select span {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: $brown;
+}
+
+/* Placeholder and selected option */
+
+.cs-select > span::after,
+.cs-select .cs-selected span::after {
+	speak: none;
+	position: absolute;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Options */
+.cs-select .cs-options {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	background: #fff;
+	visibility: hidden;
+}
+
+.cs-select.cs-active .cs-options {
+	visibility: visible;
+}
+
+.cs-select ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.cs-select ul span {
+	padding: 10px;
+}
+
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+	padding-left: 10px;
+}
+
+.cs-select li.cs-optgroup > span {
+	cursor: default;
+}
+
+/* Start adaptive block for cs-select */
+
+@include md-down {
+	div.cs-select {
+		width: 200px;
+		background: #fff;
+		margin-top: 30px;
+	}
+	.cs-skin-border > span {
+		font-size: 20px;
+	}
+	.header .overlay-nav ul .cs-select ul {
+		padding-top: 0;
+		font-size: 18px;
+	}
+	.cs-select ul span {
+		padding: 0;
+	}
+}
+
+/* Finish adaptive block for cs-select */
+	
+/* Finish styles from the file cs-select */

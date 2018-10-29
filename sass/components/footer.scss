@@ -1,0 +1,311 @@
+/* Start section Footer */
+
+.footer {
+	padding: 50px 0 25px 0;
+	background: $black-grey;
+
+	&-quick_menu {
+		&-head {
+			// border-bottom: 1px solid  $white;
+		}
+		&-links {
+			padding-top: 40px;
+			display: flex;
+			font-family: 'Lato', sans-serif;
+
+			nav {
+				ul {
+					li {
+						position: relative;
+						margin-bottom: 20px;
+						color: $normal-grey;
+						&:hover {
+							color: $white;
+							font-weight: 700;
+						}
+						img {
+							display: none;	
+						}
+						&:hover {
+							color: $white;
+							font-weight: 700;
+							 > img {
+							 	position: absolute;
+							 	display: inline-block;
+							 	height: 10px;
+							 	width: 6px;
+							 	top: calc(50% - 6px);
+							 	left: -15px;
+						    }
+						}
+					}
+				}
+			}
+			&-block_1 {
+				margin-right: 25px;
+			}
+			&-block_2 {
+				margin-right: 25px;
+			}
+			&-block_3 {
+				nav {
+					ul li:hover {
+						color: $yellow;
+					}
+				}
+				nav.social {
+					ul {
+						// margin-top: 52px;
+						display: flex;
+						li a {
+							margin-right: 10px;
+							img {
+								display: inline-block;
+								width: 21px;
+								height: 21px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&-contact {
+
+		&-head {
+			border-bottom: 1px solid  $white;			
+		}
+		&-form {
+			padding-top: 20px;
+			.contact-item {
+				position: relative;
+				margin-bottom: 10px;
+				font-size: 14px;
+			}
+		}
+
+
+	}
+
+	&-newsletter {
+		padding-top: 10px;
+
+		&-head {
+			border-bottom: 1px solid  $white;
+		}
+		.newsletter-form {
+			padding-top: 15px;
+		}
+	}
+
+	&-mob_contact {
+		&-head {
+
+		}
+	}
+
+	&-caption {
+		padding: 30px 0;
+		background: $dark-black;
+
+		&-block {
+			display: flex;
+			justify-content: space-between;
+			span {
+				font-size: 14px;
+				color: $normal-grey;
+			}
+			img {
+				width: 51px;
+				height: 18px;
+			}
+		}
+	}
+}
+
+/* Start Adaptive block */
+
+@include lg-down {
+
+}
+
+@include md-down {
+
+}
+
+@include xs-down {
+}
+
+@include sm-down {
+
+	.footer {
+		font-size: 13px;
+
+		&-quick_menu {
+			padding-left: 33px;
+
+			&-head {
+				h4 {
+					font-size: 16px;
+				}
+			}
+			.social {
+				display: none;
+			}
+
+			&-links {
+				nav ul li {
+					margin-bottom: 15px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+				&-block_2 {
+					nav ul {
+						li {
+							margin-bottom: 23.5px;
+							&:last-child {
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+
+				ul.footer-quick_menu-links-dop {
+					margin-top: 25px;
+					li {
+						margin-bottom: 25px;
+						&:hover {
+							color: $yellow;
+						}
+					}
+				}
+
+				&-block_3 {
+					display: none;
+				}
+			}
+
+		}
+
+		&-contact {
+			display: none;
+		}
+
+		&-newsletter {
+			text-align: center;
+
+			&-head {
+				h4 {
+					font-size: 13px;
+				}
+			}
+		}
+
+		&-mob_contact {
+
+			&-head {
+				padding-top: 12px;
+				padding-bottom: 30px;
+				h4 {
+					font-size: 13px;
+					text-align: center;
+				}
+			}
+			&-body {
+				text-align: center;
+				font-size: 14px;
+				img {
+					width: 24px;
+					height: 20px;
+				}
+				p {
+					padding-top: 20px;
+					color: $white;
+				}
+				nav.social {
+					ul {
+						display: flex;
+						justify-content: center;
+						li a {
+							margin-right: 10px;
+							img {
+								display: inline-block;
+								width: 21px;
+								height: 21px;
+							}
+						}
+					}
+				}
+			}
+			
+		}
+
+			
+		.btn-send button{
+			top: 2.5px;
+			right: 5px;
+			img {
+				width: 25px;
+				height: 25px;
+			}
+		}
+
+		&-caption {
+
+			&-block {
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+				span {
+					margin-bottom: 20px;
+				}
+			}
+		}
+
+	}
+
+}
+
+@include sm-up {
+
+	.footer {
+
+		&-mob_contact {
+			display: none;
+		}
+
+		.footer-quick_menu-links-dop {
+			display: none;
+		}
+	}
+
+}
+
+@include md-up {
+
+	.footer {
+		&-quick_menu {
+
+			&-links {
+
+				&-block_3 {
+
+					nav.social {
+						ul {
+							margin-top: 58px;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+
+}
+
+/* Finish Adaptive block */
+
+/* Finish section Footer */
