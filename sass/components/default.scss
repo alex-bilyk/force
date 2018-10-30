@@ -36,6 +36,7 @@ $brown: #695454;
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 html {
@@ -232,6 +233,10 @@ hr {
   top: 10px;
 }
 
+.read_more {
+  color: $orange;
+}
+
 .icon {
   position: absolute;
   top: 42%;
@@ -385,6 +390,7 @@ left: -10px;
 @include xl-down {
   .inside {
     max-width: 1140px;
+    padding: 0 15px;
   }
 }
 
@@ -409,7 +415,6 @@ left: -10px;
 @include xs-down {
   .inside {
     max-width: 100%;
-    padding: 0 15px;
   }
 }
 

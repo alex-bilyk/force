@@ -1,0 +1,195 @@
+/* Start section mm--Mix_match */
+
+.mm--mix_match {
+	margin-top: 100px;
+
+	.bg-mix_match-img {
+		top: -18%;
+		width: 850px;
+	}
+}
+
+/* Start Adaptive block mm--Mix_match */
+
+@include sm-up {
+	.mm--mix_match {
+
+		.mix_match-desc {
+			a:first-of-type {
+				margin-right: 15px;
+			}
+		}
+	}
+}
+
+@include md-up {
+	.mm--mix_match {
+
+		.bg-mix_match-img {
+			top: -18%;
+			width: 900px;
+			right: 5%;
+		}
+
+		.mix_match-desc {
+			p {
+				max-width: 940px;
+			}
+		}
+	}
+}
+
+/* Finish Adaptive block mm--Mix_match */
+
+/* Finish section mm--Mix_match */
+
+/* Start section Features */
+
+.features {
+	padding: 100px 0;
+	&__inner {
+		position: relative;
+	}
+	&__slider {
+
+		&-item {
+			padding: 0 15px;
+
+			&-wrap {
+				display: flex;
+				justify-content: center;
+			}
+		}
+
+		&-box {
+			display: flex;
+			justify-content: center;
+			max-width: 250px;
+			text-align: center;
+			font-family: 'Montserrat' ,sans-serif;
+			padding: 0 10px;
+		}
+	
+		&-img {
+			margin-bottom: 35px;
+			img {
+				height: 100px;
+			}
+		}
+
+		&-text {
+			&-head {
+				span {
+					font-weight: 600;
+				}
+			}
+			&-body {
+				margin-top: 15px;
+				p {
+					line-height: 24px;
+				}
+
+			}
+		}
+	}
+}
+
+@include lg-down {
+	.features {
+
+		&__slider {
+
+			&-arrow {
+
+				&-left {
+					left: 0px;
+				}
+
+				&-right {
+					right: 0px;
+				}
+			}
+		}
+	}
+}
+
+@include md-down {
+}
+
+@include sm-md {
+	.features {
+
+		&__slider {
+
+			&-arrow {
+
+				&-left {
+					left: -20px;
+				}
+
+				&-right {
+					right: -20px;
+				}
+			}
+		}
+	}
+}
+
+@include sm-down {
+	.features {
+		padding-top: 0;
+	}
+}
+
+@include xs-down {
+	.features {
+
+		&__slider {
+
+			&-box {
+				max-width: 280px;
+			}
+		}
+	}
+}
+
+@include es-down {
+	.features {
+
+		&__slider {
+
+			&-box {
+				max-width: 260px;
+			}
+		}
+	}
+}
+
+/* Fnish section Features */
+
+/* Start section mm--Multibrand */
+
+.mm--multibrand {
+	background: none;
+	padding-bottom: 0;
+}
+
+@include sm-down {
+	.mm--multibrand {
+		margin-top: 200px;
+	}
+}
+
+/* Finsih section mm--Multibrand */
+
+
+
+/* Start section Main--Multibrand */
+
+.mm--programs {
+	background: url(../img/multibrand/bg-multibrand.png) no-repeat;
+	background-size: cover;
+	background-position: 0px 250px;
+}
+
+/* Finsih section Main--Multibrand */
