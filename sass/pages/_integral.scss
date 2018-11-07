@@ -1,0 +1,172 @@
+/* Start section Integral */
+
+.integral {
+	padding-top: 130px;
+	padding-bottom: 170px;
+
+	&__inner {
+		position: relative;
+	}
+
+	&__images-wrapper {
+		position: absolute;
+		right: 0;
+		z-index: 1;
+		img {
+			max-width: 700px;
+		}
+	}
+
+	&__content {
+		position: relative;
+		width: 60%;
+		z-index: 2;
+		
+		h3 {
+			font-size: 80px;
+			line-height: 75px;
+			margin-bottom: 25px;
+		}
+		p {
+			font-size: 20px;
+			line-height: 28px;
+			margin-bottom: 45px;
+		}
+	}
+
+
+	&__button-wrapper {
+		.btn-integral {
+			width: 269px;
+			padding: 10px 15px;
+		}
+	}
+}
+
+/* Start Adaptive block */
+
+@include xl-down {
+
+	.integral {
+		&__images-wrapper {
+			img {
+				max-width: 400px;
+			}
+		}
+	}
+	
+}
+
+@include md-down {
+
+	.integral {
+
+		&__images-wrapper {
+			img {
+				width: 320px;
+			}
+		}
+
+		&__content {
+
+			h3 {
+				font-size: 50px;
+				line-height: 50px;
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+	
+}
+
+@include sm-down {
+
+	.integral {
+		padding-top: 50px;
+		
+		&__inner {
+			text-align: center;
+		}
+		&__images-wrapper {
+			position: static;
+			img {
+				width: 280px;
+			}
+		}
+
+		&__content {
+			width: 100%;
+
+			h3 {
+				font-size: 35px;
+				line-height: 40px;
+			}
+			p {
+				font-size: 16px;
+				margin-bottom: 15px;
+			}
+		}
+
+	}
+	
+}
+
+/* Finish Adaptive block */
+
+/* Finish section Integral */
+
+/* Start section Procces */
+
+.int-process {
+	&__items {
+
+		&-item {
+			width: 100%;
+			padding: 10px 0;
+			margin: 30px 0px;
+			display: flex;
+
+			&__text-wrapper {
+				flex-basis: 55%;
+
+				h6 {
+					font-size: 50px;
+					line-height: 50px;
+				}
+
+				ul {
+					line-height: 40px;
+					li {
+						font-size: 20px;
+						position: relative;
+						&:first-of-type {
+							&:before {
+								content: '';
+								position: absolute;
+								width: 20px;
+								height: 20px;
+								left: -25px;
+								top: 50%;
+								transform: translateY(-25%);
+								background: url(../img/icons/mark_green.png) no-repeat;
+							}
+						}
+					}
+				}
+			}
+
+			&__img-wrapper {
+				flex-basis: 45%;
+				img {
+					max-width: 380px;
+					max-height: 300px;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+/* Finish section Procces */

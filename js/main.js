@@ -159,6 +159,14 @@ $(document).ready(function(){
 		[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
 			new SelectFx(el);
 		} );
+
+		// $.ajax({
+		// 	url: 'data.json'
+		// }).done(function(data){
+		// 	var json = JSON.parse(data);
+			
+		// 	console.log(data)
+		// });
 	})();
 
 	/* Finish settings for select*/

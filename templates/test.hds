@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul class="updates">
+   <script id="template" type="text/x-handlebars-template">
+      <li>
+	  <h2>{{name}}</h2>
+      </li>
+   </script>
+</ul>
+
+<script>
+	var data = {
+   name : 'John Doe'
+},
+</script>
+<script src="../js/handlebars-v4.0.12.js"></script>
+</body>
+</html>
